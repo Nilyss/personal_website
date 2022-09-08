@@ -1,0 +1,98 @@
+// import SCSS variables
+@import './variables';
+
+// buttons
+@mixin submitButton {
+  display: flex;
+  align-items: center;
+  background-image: radial-gradient(
+                  100% 100% at 100% 0,
+                  $colorTertiary 0,
+                  $colorPrimary 100%
+  );
+  border: none;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+  rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(58, 65, 111, 0.5) 0 -3px 0 inset;
+  color: $colorTertiary;
+  transition: box-shadow 0.15s, transform 0.15s;
+  height: 2em;
+  padding: 1.5em;
+  cursor: pointer;
+  &:focus {
+    box-shadow: $colorPrimary 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, $colorPrimary 0 -3px 0 inset;
+  }
+  &:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, $colorPrimary 0 -3px 0 inset;
+    transform: translateY(-2px);
+  }
+  &:active {
+    box-shadow: $colorPrimary 0 3px 7px inset;
+    transform: translateY(2px);
+  }
+}
+
+@mixin navButton {
+  color:  #000000;
+  align-items: center;
+  background-image: radial-gradient(
+                  100% 100% at 100% 0,
+                  $colorTertiary 0,
+                  $colorPrimary 100%
+  );
+  box-shadow: rgba(0, 0, 0, 0.4) 0 2px 4px,
+  rgba(0, 0, 0, 0.3) 0 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  border: none;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  line-height: 24px;
+  width: 48%;
+  height: 2.7em;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  cursor: pointer;
+  &:hover {
+    outline: 0;
+    background-image: radial-gradient(
+                    60% 100% at 100% 0,
+                    $colorTertiary 0,
+                    $colorPrimary 60%
+    );
+  }
+  &::after {
+    content: '';
+    background-color: #2b2a33;
+    border-radius: 8px;
+    display: block;
+    height: 2.3em;
+    top: .2em;
+    left: .5em;
+    width: 95%;
+    position: absolute;
+    transform: translate(8px, 8px);
+    transition: transform 200ms ease-out;
+    z-index: -1;
+  }
+
+  &:hover::after {
+    transform: translate(0, 0);
+  }
+
+  &:active::after {
+    background-color: #ffdeda;
+    outline: 0;
+  }
+}
+
+@mixin typewriting {
+  font-weight: lighter;
+  color: #f1f1f1;
+}

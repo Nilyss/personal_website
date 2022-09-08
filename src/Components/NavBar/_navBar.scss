@@ -1,0 +1,71 @@
+// import SCSS Utils
+@import '/src/Utils/Styles/variables';
+@import '/src/Utils/Styles/mixins';
+@import '/src/Utils/Styles/keyframes';
+
+//********** Nav Bar Style **********
+
+.navBar__container {
+  background-image: radial-gradient(
+    100% 100% at 0% 0,
+    $colorTertiary 0,
+    $colorPrimary 100%
+  );
+  height: 100vh;
+}
+
+.navBar__container__nav {
+  padding-top: 50%;
+}
+
+.navBar__container__nav__ul {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  text-align: center;
+  min-height: 500px;
+}
+
+.navBar__container__nav__ul__li {
+  list-style: none;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  z-index: 2;
+}
+
+.navBar__container__nav__li__button {
+  @include navButton;
+}
+
+// ********** Animation Toggle **********
+
+.toggleAnimationTrue {
+  transform: translateX(0);
+  transition: All 500ms cubic-bezier(.55,.8,.11,1.14)
+}
+
+.toggleAnimationFalse {
+  transform: translateX(-200%);
+  transition: All 500ms ease-out;
+}
+
+// ********** Toggle Nav Bar : made in width **********
+
+.modal {
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+.toggleTrue {
+  width: 20%;
+}
+
+.toggleFalse {
+  width: 20%;
+}

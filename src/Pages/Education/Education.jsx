@@ -1,17 +1,15 @@
 // styles
-import './_home.scss'
+import './_education.scss'
 
 // components
 import NavBar from '../../Components/NavBar/NavBar'
 import Info from '../../Components/Info/Info'
 
-// init Page
-export default function Home() {
-  // render the function in dom
+export default function Education() {
   return (
     <>
       <header></header>
-      <main className="homeMain">
+      <main className="educationMain">
         <NavBar />
         <Info />
       </main>

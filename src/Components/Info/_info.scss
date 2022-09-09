@@ -1,0 +1,42 @@
+// import SCSS Utils
+@import '/src/Utils/Styles/variables';
+@import '/src/Utils/Styles/mixins';
+@import '/src/Utils/Styles/keyframes';
+
+.sectionInfo {
+  width: 20%;
+  height: 100vh;
+  position: absolute;
+  z-index: -1;
+}
+
+.contactContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  gap: 2em;
+  text-align: center;
+  padding: 1em;
+  justify-content: center;
+  background: $colorBgDark;
+}
+
+.contactContainer__info {
+  display: flex;
+  flex-flow: column;
+  gap: 0.5em;
+}
+
+.contactContainer__info__title {
+  color: $colorPrimary;
+  font-weight: 700;
+  font-size: 1.3em;
+  text-transform: uppercase;
+}
+
+.contactContainer__info__content {
+  color: $colorSecondary;
+  font-weight: 500;
+  font-size: 1.2em;
+}

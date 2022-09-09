@@ -1,17 +1,15 @@
 // styles
-import './_home.scss'
+import './_portFolio.scss'
 
 // components
 import NavBar from '../../Components/NavBar/NavBar'
 import Info from '../../Components/Info/Info'
 
-// init Page
-export default function Home() {
-  // render the function in dom
+export default function PortFolio() {
   return (
     <>
       <header></header>
-      <main className="homeMain">
+      <main className="portFolioMain">
         <NavBar />
         <Info />
       </main>

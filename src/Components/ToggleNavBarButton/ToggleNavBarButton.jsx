@@ -17,7 +17,7 @@ export default function ToggleNavBarButton() {
             onClick={() => {
               toggleNav('close')
             }}
-            className={` material-symbols-outlined closeIcon Container__closeIcon ${
+            className={` material-symbols-outlined toggleIcon closeIcon Container__closeIcon ${
               navState.showNav ? 'animatedIcons--alt' : 'animatedIcons--alt'
             }`}
           >
@@ -31,7 +31,7 @@ export default function ToggleNavBarButton() {
               onClick={() => {
                 toggleNav('open')
               }}
-              className={` material-symbols-outlined menuIconContainer__menuIcon ${
+              className={` material-symbols-outlined toggleIcon menuIconContainer__menuIcon ${
                 navState.hideNav ? 'animatedIcons' : 'animatedIcons'
               }`}
             >

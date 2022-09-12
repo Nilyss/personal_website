@@ -6,11 +6,11 @@
 // ********** Icons Style **********
 
 .iconsContainer {
-  padding: 2em;
   position: absolute;
   top: 0;
-  left: 0;
   z-index: 1;
+  width: fit-content;
+  padding: 2em;
 }
 
 .menuIconContainer {
@@ -21,7 +21,7 @@
   cursor: pointer;
 }
 
-.material-symbols-outlined {
+.toggleIcon {
   color: $colorBgDark;
   font-size: 2em;
   border-radius: 50%;

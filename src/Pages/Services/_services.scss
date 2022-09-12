@@ -3,6 +3,37 @@
 @import '/src/Utils/Styles/mixins';
 @import '/src/Utils/Styles/keyframes';
 
+.servicesContainer {
+  display: flex;
+  position: absolute;
+  z-index: -2;
+  min-width: 100%;
+  overflow: hidden;
+}
+
+// ********** VIDEO IN BACKGROUND **********
+.servicesContainer__videoContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  z-index: -2;
+  overflow: hidden;
+  background: $colorBgDark;
+}
+
+.servicesContainer__videoContainer__video {
+  animation: videoFadeIn 31s ease infinite;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 30em 0;
+}
+
+// ********** MAIN **********
 .servicesMain {
   display: flex;
 }

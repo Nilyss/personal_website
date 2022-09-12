@@ -1,5 +1,5 @@
 //  dependencies
-import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 // hooks
 import { useContext } from 'react'
@@ -14,55 +14,70 @@ import ToggleNavBarButton from '../ToggleNavBarButton/ToggleNavBarButton'
 export default function NavBar() {
   // init hooks
   const { navState } = useContext(NavContext)
+  const navigate = useNavigate()
+
   return (
     <section
       className={`sectionNavBar ${
         navState.showNav ? 'toggleTrue' : 'toggleFalse'
       }`}
     >
-      <ToggleNavBarButton />
       <div className="modal">
+        <ToggleNavBarButton />
         {navState.showNav ? (
           <div className="toggleAnimationTrue">
             <div className="navBar__container">
               <nav className="navBar__container__nav">
                 <ul className="navBar__container__nav__ul">
                   <li className="navBar__container__nav__ul__li">
-                    <Link to="/" className="navBar__container__nav__li__button">
+                    <button
+                      onClick={() => {
+                        navigate('/', { replace: true })
+                      }}
+                      className="navBar__container__nav__li__button"
+                    >
                       Accueil
-                    </Link>
+                    </button>
                   </li>
                   <li className="navBar__container__nav__ul__li">
-                    <Link
-                      to="/services"
+                    <button
+                      onClick={() => {
+                        navigate('/services', { replace: true })
+                      }}
                       className="navBar__container__nav__li__button"
                     >
                       Services
-                    </Link>
+                    </button>
                   </li>
                   <li className="navBar__container__nav__ul__li">
-                    <Link
-                      to="/portfolio"
+                    <button
+                      onClick={() => {
+                        navigate('/portfolio', { replace: true })
+                      }}
                       className="navBar__container__nav__li__button"
                     >
                       Porte folio
-                    </Link>
+                    </button>
                   </li>
                   <li className="navBar__container__nav__ul__li">
-                    <Link
-                      to="/education"
+                    <button
+                      onClick={() => {
+                        navigate('/education', { replace: true })
+                      }}
                       className="navBar__container__nav__li__button"
                     >
                       Parcours
-                    </Link>
+                    </button>
                   </li>
                   <li className="navBar__container__nav__ul__li">
-                    <Link
-                      to="/contact"
+                    <button
+                      onClick={() => {
+                        navigate('/', { replace: true })
+                      }}
                       className="navBar__container__nav__li__button"
                     >
                       Contact
-                    </Link>
+                    </button>
                   </li>
                 </ul>
               </nav>
@@ -74,41 +89,29 @@ export default function NavBar() {
               <nav className="navBar__container__nav">
                 <ul className="navBar__container__nav__ul">
                   <li className="navBar__container__nav__ul__li">
-                    <Link to="/" className="navBar__container__nav__li__button">
+                    <button className="navBar__container__nav__li__button">
                       Accueil
-                    </Link>
+                    </button>
                   </li>
                   <li className="navBar__container__nav__ul__li">
-                    <Link
-                      to="/services"
-                      className="navBar__container__nav__li__button"
-                    >
+                    <button className="navBar__container__nav__li__button">
                       Services
-                    </Link>
+                    </button>
                   </li>
                   <li className="navBar__container__nav__ul__li">
-                    <Link
-                      to="/portefolio"
-                      className="navBar__container__nav__li__button"
-                    >
+                    <button className="navBar__container__nav__li__button">
                       Porte folio
-                    </Link>
+                    </button>
                   </li>
                   <li className="navBar__container__nav__ul__li">
-                    <Link
-                      to="/education"
-                      className="navBar__container__nav__li__button"
-                    >
+                    <button className="navBar__container__nav__li__button">
                       Parcours
-                    </Link>
+                    </button>
                   </li>
                   <li className="navBar__container__nav__ul__li">
-                    <Link
-                      to="/contact"
-                      className="navBar__container__nav__li__button"
-                    >
+                    <button className="navBar__container__nav__li__button">
                       Contact
-                    </Link>
+                    </button>
                   </li>
                 </ul>
               </nav>

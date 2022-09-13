@@ -4,6 +4,7 @@ import './_index.scss'
 // videos
 import backgroundVideo from '../../Assets/Videos/bgHome.mp4'
 import backgroundVideo2 from '../../Assets/Videos/bgServices.mp4'
+import backgroundVideo3 from '../../Assets/Videos/bgPortFolio.mp4'
 
 // components
 import NavBar from '../../Components/NavBar/NavBar'
@@ -59,6 +60,20 @@ export default function Index() {
           <source
             className="videoBackground__src"
             src={backgroundVideo2}
+            type="video/mp4"
+          />
+        </video>
+      </div>
+      <div className="portFolioVideoContainer">
+        <video
+          className="servicesContainer__videoContainer__video"
+          autoPlay
+          loop
+          muted
+        >
+          <source
+            className="videoBackground__src"
+            src={backgroundVideo3}
             type="video/mp4"
           />
         </video>

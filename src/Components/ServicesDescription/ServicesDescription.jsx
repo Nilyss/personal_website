@@ -9,7 +9,9 @@ export default function ServicesDescription() {
           <h1 className="servicesDescriptionContainer__title">Services</h1>
         </div>
         <div className="servicesDescriptionContainer__info">
-          <h2 className="servicesDescriptionContainer__">Développement Web</h2>
+          <h2 className="servicesDescriptionContainer__subtitle">
+            Développement Web
+          </h2>
         </div>
         <div className="servicesDescriptionContainer__card">
           <div className="servicesDescriptionContainer__card__titleContainer">

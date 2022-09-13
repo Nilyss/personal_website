@@ -4,7 +4,8 @@
 @import '/src/Utils/Styles/keyframes';
 
 .sectionDescription {
-  width: 30%;
+  width: 100%;
+  height: 100vh;
 }
 
 .descriptionContainer {
@@ -20,7 +21,7 @@
     $colorPrimary 100%
   );
   padding: 1em;
-  border-radius: 0 8px 8px 0;
+  //border-radius: 0 8px 8px 0;
 }
 
 .descriptionContainer__intro {

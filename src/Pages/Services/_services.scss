@@ -3,12 +3,20 @@
 @import '/src/Utils/Styles/mixins';
 @import '/src/Utils/Styles/keyframes';
 
+.servicesMain {
+  display: flex;
+  width: 20%;
+}
+
 .servicesContainer {
   display: flex;
   position: absolute;
   z-index: -2;
   min-width: 100%;
-  overflow: hidden;
+}
+
+.servicesDescription {
+  width: 30%;
 }
 
 // ********** VIDEO IN BACKGROUND **********
@@ -31,9 +39,4 @@
   height: 100%;
   object-fit: cover;
   object-position: 30em 0;
-}
-
-// ********** MAIN **********
-.servicesMain {
-  display: flex;
 }

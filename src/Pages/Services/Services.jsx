@@ -28,13 +28,11 @@ export default function Services() {
           />
         </video>
       </div>
-      <header></header>
-      <main className="servicesMain">
+      <div className="servicesMain">
         <NavBar />
-        <Info />
-        <ServicesDescription />
-      </main>
-      <footer></footer>
+      </div>
+      <Info />
+      <div className="servicesDescription">{<ServicesDescription />}</div>
     </div>
   )
 }

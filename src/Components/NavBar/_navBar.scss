@@ -17,10 +17,6 @@
   );
 }
 
-//.navBar__container__nav {
-//  padding-top: 50%;
-//}
-
 .navBar__container__nav__ul {
   display: flex;
   flex-flow: column;
@@ -59,15 +55,10 @@
 
 // ********** Toggle Nav Bar : made in width **********
 
-.modal {
-  position: sticky;
-  top: 0;
-}
-
 .toggleTrue {
-  width: 20%;
+  width: 100%;
 }
 
 .toggleFalse {
-  width: 20%;
+  width: 100%;
 }

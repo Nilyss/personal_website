@@ -10,6 +10,11 @@
   min-width: 100%;
 }
 
+.homeMain {
+  display: flex;
+  width: 20%;
+}
+
 // ********** VIDEO IN BACKGROUND **********
 
 .homeContainer__videoContainer {
@@ -30,9 +35,4 @@
   height: 100%;
   object-fit: cover;
   object-position: 30em 0;
-}
-
-// ********** MAIN **********
-.homeMain {
-  display: flex;
 }

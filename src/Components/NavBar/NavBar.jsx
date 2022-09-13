@@ -72,7 +72,7 @@ export default function NavBar() {
                   <li className="navBar__container__nav__ul__li">
                     <button
                       onClick={() => {
-                        navigate('/', { replace: true })
+                        navigate('/home', { replace: true })
                       }}
                       className="navBar__container__nav__li__button"
                     >

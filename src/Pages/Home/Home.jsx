@@ -28,13 +28,13 @@ export default function Home() {
           />
         </video>
       </div>
-      <header></header>
-      <main className="homeMain">
+      <div className="homeMain">
         <NavBar />
-        <Info />
+      </div>
+      <Info />
+      <div className="descriptionWrapper">
         <Description />
-      </main>
-      <footer></footer>
+      </div>
     </div>
   )
 }

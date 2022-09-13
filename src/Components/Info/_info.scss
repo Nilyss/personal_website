@@ -4,13 +4,15 @@
 @import '/src/Utils/Styles/keyframes';
 
 .sectionInfo {
-  margin-left: -20%;
+  @media(max-width: $breakpointMobile) {
+    display: none;
+  }
   width: 20%;
   height: 100%;
   position: sticky;
   top: 0;
   z-index: -1;
-  background: $colorBgDark;
+  background: $colorQuaternary;
 }
 
 .infoContainer {

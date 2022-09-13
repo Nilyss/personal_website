@@ -3,6 +3,13 @@
 @import '/src/Utils/Styles/mixins';
 @import '/src/Utils/Styles/keyframes';
 
+.carousel {
+  position: absolute;
+  top: 230%;
+  width: 40%;
+  padding: 2em;
+}
+
 .carouselPicture {
   width: 100%;
   object-fit: cover;

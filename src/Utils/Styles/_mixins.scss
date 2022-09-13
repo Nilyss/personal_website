@@ -1,6 +1,28 @@
 // import SCSS variables
 @import './variables';
 
+// styles fonts
+@mixin titleStyle {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+@mixin subtitleStyle {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+@mixin smallTitleStyle {
+  font-size: 1.35em;
+  font-weight: 700;
+}
+
+@mixin paragraphStyle {
+  font-size: 1.2em;
+  padding: 2em;
+  line-height: 1.5em;
+}
+
 // buttons
 @mixin submitButton {
   display: flex;

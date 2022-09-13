@@ -1,7 +1,7 @@
 // styles
-import './_portFolioDescription.scss'
+import './_portFolio.scss'
 
-export default function PortFolioDescription() {
+export default function PortFolio() {
   return (
     <section className="sectionPortFolioDescription">
       <article className="sectionPortFolioDescription__container">

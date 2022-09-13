@@ -3,18 +3,33 @@
 @import '/src/Utils/Styles/mixins';
 @import '/src/Utils/Styles/keyframes';
 
+.sectionNavBar {
+  @media(max-width: $breakpointMobile) {
+    margin-left: unset;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  margin-left: -20%;
+}
+
 //********** Nav Bar Style **********
+
+.modal {
+  position: sticky;
+  top: 0;
+}
 
 .navBar__container {
   display: flex;
   flex-flow: column;
   justify-content: center;
-  height: 100vh;
   background-image: radial-gradient(
     100% 100% at 0% 0,
     $colorTertiary 0,
     $colorPrimary 100%
   );
+  height: 100vh;
 }
 
 .navBar__container__nav__ul {
@@ -56,9 +71,15 @@
 // ********** Toggle Nav Bar : made in width **********
 
 .toggleTrue {
-  width: 100%;
+  @media(max-width: $breakpointMobile) {
+    width: 100%;
+  }
+  width: 20%;
 }
 
 .toggleFalse {
-  width: 100%;
+  @media(max-width: $breakpointMobile) {
+    width: 100%;
+  }
+  width: 20%;
 }

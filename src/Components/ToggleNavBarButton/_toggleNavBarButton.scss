@@ -6,6 +6,11 @@
 // ********** Icons Style **********
 
 .iconsContainer {
+  @media(max-width: $breakpointMobile) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
   position: absolute;
   top: 0;
   z-index: 1;
@@ -22,7 +27,7 @@
 }
 
 .toggleIcon {
-  color: $colorBgDark;
+  color: $colorQuaternary;
   font-size: 2em;
   border-radius: 50%;
   padding: 0.2em;

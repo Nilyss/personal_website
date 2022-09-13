@@ -1,0 +1,72 @@
+// import SCSS Utils
+@import '/src/Utils/Styles/variables';
+@import '/src/Utils/Styles/mixins';
+@import '/src/Utils/Styles/keyframes';
+
+.sectionProfile {
+  @media (max-width: $breakpointMobile) {
+    height: unset;
+  }
+  height: 100vh;
+  background-image: radial-gradient(
+    120% 100% at 110% 0,
+    $colorTertiary 0,
+    $colorPrimary 100%
+  );
+}
+
+.sectionProfile__container {
+  @media (max-width: $breakpointMobile) {
+    height: unset;
+    margin-top: 5em;
+  }
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  gap: 1em;
+  padding: 1em;
+  height: 100%;
+}
+
+.sectionProfile__container__intro {
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+  color: #000000;
+}
+
+.sectionProfile__container__intro__subtitle {
+  @include subtitleStyle;
+}
+
+.sectionProfile__container__intro__title {
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+.sectionProfile__container__pictureContainer__fig {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.sectionProfile__container__pictureContainer__fig__img {
+  width: 15em;
+  height: 19em;
+  object-fit: cover;
+  border-radius: 18px;
+  border: 2px solid $colorPrimary;
+  box-shadow: $boxShadowItem;
+}
+
+.sectionProfile__container__profile {
+  color: #f1f1f1;
+  background: $colorQuaternary;
+  border-radius: $borderRadiusCards;
+  box-shadow: $boxShadowCard;
+  display: flex;
+}
+
+.sectionProfile__container__profile__text {
+  @include paragraphStyle;
+}

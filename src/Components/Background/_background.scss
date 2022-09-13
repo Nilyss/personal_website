@@ -1,0 +1,52 @@
+// import SCSS Utils
+@import '/src/Utils/Styles/variables';
+@import '/src/Utils/Styles/mixins';
+@import '/src/Utils/Styles/keyframes';
+
+// First Background
+.firstBackgroundVideoContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  overflow: hidden;
+  background: $colorQuaternary;
+}
+
+// Second Background
+.secondBackgroundVideoContainer {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  overflow: hidden;
+  background: $colorQuaternary;
+}
+
+// Third Background
+.thirdBackgroundVideoContainer {
+  position: absolute;
+  top: 200%;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  overflow: hidden;
+  background: $colorQuaternary;
+}
+
+
+.video {
+  animation: videoFadeIn 31s ease infinite;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 30em 0;
+}

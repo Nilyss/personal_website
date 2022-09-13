@@ -1,40 +1,40 @@
 // styles
 import './_home.scss'
 
-// asset
-import backgroundVideo from '../../Assets/Videos/bgHome.mp4'
-
-// components
+// ********** components **********
+// nav components
 import NavBar from '../../Components/NavBar/NavBar'
 import Info from '../../Components/Info/Info'
-import Description from '../../Components/Description/Description'
 
-// init Page
+// sections components
+import Profile from '../../Components/Profile/Profile'
+import Services from '../../Components/Services/Services'
+
+// background components
+import FirstBackground from '../../Components/Background/FirstBackground'
+import SecondBackground from '../../Components/Background/SecondBackground'
+import ThirdBackground from '../../Components/Background/ThirdBackground'
+import PortFolio from '../../Components/PortFolio/PortFolio'
+
+// carousel components
+import Carousel from '../../Components/Carousel/Carousel'
+
 export default function Home() {
-  // render the function in dom
   return (
-    <div className="homeContainer">
-      <div className="homeContainer__videoContainer">
-        <video
-          className="homeContainer__videoContainer__video"
-          autoPlay
-          loop
-          muted
-        >
-          <source
-            className="videoBackground__src"
-            src={backgroundVideo}
-            type="video/mp4"
-          />
-        </video>
-      </div>
-      <div className="homeMain">
-        <NavBar />
-      </div>
+    <main className="main">
       <Info />
-      <div className="descriptionWrapper">
-        <Description />
+      <NavBar />
+      <div className="main__sections">
+        <Profile />
+        <Services />
+        <PortFolio />
       </div>
-    </div>
+      <div className="main__background">
+        <FirstBackground />
+        <SecondBackground />
+        <ThirdBackground />
+        <Carousel />
+      </div>
+    </main>
   )
 }

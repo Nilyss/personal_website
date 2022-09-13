@@ -3,36 +3,24 @@
 @import '/src/Utils/Styles/mixins';
 @import '/src/Utils/Styles/keyframes';
 
-.homeContainer {
+.main {
   display: flex;
-  position: absolute;
-  z-index: -2;
-  min-width: 100%;
+  flex-flow: wrap;
 }
 
-.homeMain {
+.main__sections {
+  @media(max-width: $breakpointMobile) {
+    width: 100%;
+  }
+  width: 40%;
   display: flex;
-  width: 20%;
+  flex-flow: column;
 }
 
-// ********** VIDEO IN BACKGROUND **********
-
-.homeContainer__videoContainer {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: block;
-  width: 100%;
-  height: 100%;
-  z-index: -2;
-  overflow: hidden;
-  background: $colorBgDark;
-}
-
-.homeContainer__videoContainer__video {
-  animation: videoFadeIn 31s ease infinite;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: 30em 0;
+.main__background {
+  @media(max-width: $breakpointMobile) {
+    display: none;
+  }
+  width: 40%;
+  height: 1500px;
 }

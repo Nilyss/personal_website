@@ -2,20 +2,20 @@
 import TypeWriter from 'typewriter-effect' // https://github.com/tameemsafi/typewriterjs
 
 // styles
-import './_description.scss'
+import './_profile.scss'
 
 // images
 import profilePicture from '../../Assets/Images/pp.jpg'
 
-export default function Description() {
+export default function Profile() {
   return (
-    <section className="sectionDescription">
-      <article className="descriptionContainer">
-        <div className="descriptionContainer__intro">
-          <p className="descriptionContainer__intro__subtitle">
+    <section className="sectionProfile">
+      <article className="sectionProfile__container">
+        <div className="sectionProfile__container__intro">
+          <p className="sectionProfile__container__intro__subtitle">
             Bonjour, je m'appelle
           </p>
-          <h1 className="descriptionContainer__intro__name">
+          <h1 className="sectionProfile__container__intro__title">
             <TypeWriter
               onInit={(typewriter) => {
                 typewriter
@@ -29,17 +29,17 @@ export default function Description() {
             />
           </h1>
         </div>
-        <div className="descriptionContainer__picture">
-          <figure className="descriptionContainer__picture__fig">
+        <div className="sectionProfile__container__pictureContainer">
+          <figure className="sectionProfile__container__pictureContainer__fig">
             <img
-              className="descriptionContainer__picture__fig__img"
+              className="sectionProfile__container__pictureContainer__fig__img"
               src={profilePicture}
               alt="Nicolas Decressac"
             />
           </figure>
         </div>
-        <div className="descriptionContainer__description">
-          <p className="descriptionContainer__description__text">
+        <div className="sectionProfile__container__profile">
+          <p className="sectionProfile__container__profile__text">
             Passionné par le développement web, avec une appétence pour la
             partie front-end, tout en appréciant également la partie back-end,
             je recherche une alternance étant déjà diplômé chez OpenClassrooms

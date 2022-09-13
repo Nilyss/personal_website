@@ -10,8 +10,8 @@ import OhMyFood from '../../Assets/Images/ohmyfood.webp'
 
 export default function portFolioCarousel() {
   return (
-    <>
-      <Carousel className="carousel">
+    <div className="carousel">
+      <Carousel className="carouselContainer">
         <img
           className="carouselPicture"
           src={Groupomania}
@@ -23,6 +23,6 @@ export default function portFolioCarousel() {
           alt="projet SCSS OhMyFood"
         />
       </Carousel>
-    </>
+    </div>
   )
 }

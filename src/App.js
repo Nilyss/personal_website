@@ -8,12 +8,7 @@ import { NavContextProvider } from './Context/NavContext' // toggle nav panel
 import GlobalStyle from './Utils/Styles/GlobalStyle' // reset css
 
 // pages
-import Index from './Pages/Index/Index'
 import Home from './Pages/Home/Home'
-import Services from './Pages/Services/Services'
-import PortFolio from './Pages/PortFolio/PortFolio'
-import Education from './Pages/Education/Education'
-import Contact from './Pages/Contact/Contact'
 import NotExistingPage from './Pages/NotExistingPage/NotExistingPage'
 
 export default function App() {
@@ -23,12 +18,7 @@ export default function App() {
         <GlobalStyle />
         <NavContextProvider>
           <Routes>
-            <Route path="/" element={<Index />} />
-            <Route path="/home" element={<Home />} />
-            <Route path="/services" element={<Services />} />
-            <Route path="/portfolio" element={<PortFolio />} />
-            <Route path="/education" element={<Education />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route path="/" element={<Home />} />
             <Route path="*" element={<NotExistingPage />} />
           </Routes>
         </NavContextProvider>

@@ -3,3 +3,8 @@
   50% {opacity: 1}
   100% {opacity: 0 }
 }
+
+@keyframes showCarousel {
+  from {opacity: 0}
+  to {opacity: 1}
+}

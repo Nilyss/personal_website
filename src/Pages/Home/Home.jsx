@@ -13,11 +13,7 @@ import Services from '../../Components/Services/Services'
 // background components
 import FirstBackground from '../../Components/Background/FirstBackground'
 import SecondBackground from '../../Components/Background/SecondBackground'
-import ThirdBackground from '../../Components/Background/ThirdBackground'
 import PortFolio from '../../Components/PortFolio/PortFolio'
-
-// carousel components
-import Carousel from '../../Components/Carousel/Carousel'
 
 export default function Home() {
   return (
@@ -32,8 +28,6 @@ export default function Home() {
       <div className="main__background">
         <FirstBackground />
         <SecondBackground />
-        <ThirdBackground />
-        <Carousel />
       </div>
     </main>
   )

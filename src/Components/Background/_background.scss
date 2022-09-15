@@ -29,7 +29,7 @@
   background: $colorQuaternary;
 }
 
-// Third Background
+ //Third Background
 .thirdBackgroundVideoContainer {
   position: absolute;
   top: 200%;
@@ -39,9 +39,12 @@
   height: 100%;
   z-index: -2;
   overflow: hidden;
-  background: $colorQuaternary;
+  background-image: radial-gradient(
+    140% 100% at 280% 0,
+    $colorTertiary 0,
+    $colorPrimary 100%
+  );
 }
-
 
 .video {
   animation: videoFadeIn 31s ease infinite;

@@ -5,7 +5,7 @@ import TypeWriter from 'typewriter-effect' // https://github.com/tameemsafi/type
 import './_profile.scss'
 
 // images
-import profilePicture from '../../Assets/Images/pp.jpg'
+import profilePicture from '../../Assets/Images/pp.webp'
 
 export default function Profile() {
   return (

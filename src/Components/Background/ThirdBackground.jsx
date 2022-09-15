@@ -4,7 +4,7 @@ import './_background.scss'
 // video
 import backgroundVideo from '../../Assets/Videos/bgPortFolio.mp4'
 
-export default function FirstBackground() {
+export default function ThirdBackground() {
   return (
     <div className="thirdBackgroundVideoContainer">
       <video className="video" autoPlay loop muted>

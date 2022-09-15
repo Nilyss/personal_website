@@ -16,6 +16,7 @@ import Education from '../../Components/Education/Education'
 import FirstBackground from '../../Components/Background/FirstBackground'
 import SecondBackground from '../../Components/Background/SecondBackground'
 import ThirdBackground from '../../Components/Background/ThirdBackground'
+import Contact from '../../Components/Contact/Contact'
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
         <Services />
         <PortFolio />
         <Education />
+        <Contact />
       </div>
       <div className="main__background">
         <FirstBackground />

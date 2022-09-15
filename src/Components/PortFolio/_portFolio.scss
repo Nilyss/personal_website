@@ -32,11 +32,11 @@
 }
 
 .sectionPortFolioDescription__container__intro__title {
-  font-size: 2.5em;
+@include titleStyle;
 }
 
 .sectionPortFolioDescription__container__intro__subtitle {
-  font-size: 1.5em;
+@include subtitleStyle
 }
 
 .sectionPortFolioDescription__container__list {

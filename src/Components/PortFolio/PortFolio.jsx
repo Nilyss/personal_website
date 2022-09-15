@@ -11,7 +11,7 @@ export default function PortFolio() {
             Porte-Folio
           </h2>
           <h3 className="sectionPortFolioDescription__container__intro__subtitle">
-            Projets réalisé
+            Projets réalisés
           </h3>
         </div>
         <Carousel />

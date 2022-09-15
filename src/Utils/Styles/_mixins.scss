@@ -1,6 +1,28 @@
 // import SCSS variables
 @import './variables';
 
+// styles fonts
+@mixin titleStyle {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+@mixin subtitleStyle {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+@mixin smallTitleStyle {
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+@mixin paragraphStyle {
+  font-size: 1.2em;
+  padding: 2em;
+  line-height: 1.5em;
+}
+
 // buttons
 @mixin submitButton {
   display: flex;
@@ -24,6 +46,11 @@
       rgba(45, 35, 66, 0.3) 0 7px 13px -3px, $colorPrimary 0 -3px 0 inset;
   }
   &:hover {
+    background-image: radial-gradient(
+                    100% 100% at 120% 0,
+                    $colorTertiary 0,
+                    $colorPrimary 100%
+    );
     box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
       rgba(45, 35, 66, 0.3) 0 7px 13px -3px, $colorPrimary 0 -3px 0 inset;
     transform: translateY(-2px);
@@ -73,7 +100,7 @@
     border-radius: 8px;
     display: block;
     height: 2.3em;
-    top: 0.2em;
+    top: .35em;
     left: 0.5em;
     width: 95%;
     position: absolute;

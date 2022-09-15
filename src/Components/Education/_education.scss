@@ -1,0 +1,69 @@
+// import SCSS Utils
+@import '/src/Utils/Styles/variables';
+@import '/src/Utils/Styles/mixins';
+@import '/src/Utils/Styles/keyframes';
+
+.sectionEducation {
+  @media (max-width: $breakpointMobile) {
+    height: unset;
+  }
+  background: $colorPrimary;
+  height: 100vh;
+}
+
+.sectionEducation__container {
+  @media (max-width: $breakpointMobile) {
+    height: unset;
+    margin-top: 5em;
+  }
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  padding: 1em;
+  height: 100%;
+}
+
+.sectionEducation__container__intro {
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+  color: #000000;
+}
+
+.sectionEducation__container__intro__title {
+  @include titleStyle;
+}
+
+.sectionEducation__container__body {
+  display: flex;
+}
+
+.sectionEducation__container__body__education {
+  padding: 2em;
+  color: #f1f1f1;
+  background: $colorQuaternary;
+  border-radius: $borderRadiusCards;
+  box-shadow: $boxShadowCard;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sectionEducation__container__body__education__title {
+  @include subtitleStyle;
+  margin-bottom: 2em;
+}
+
+.sectionEducation__container__body__education__ul__li__title {
+  @include smallTitleStyle;
+  margin-bottom: -2em;
+}
+
+.sectionEducation__container__body__education__ul__li__text {
+  @include paragraphStyle;
+}
+
+.sectionEducation__container__body__education__ul__li {
+  list-style: none;
+}

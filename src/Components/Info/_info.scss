@@ -1,0 +1,45 @@
+// import SCSS Utils
+@import '/src/Utils/Styles/variables';
+@import '/src/Utils/Styles/mixins';
+@import '/src/Utils/Styles/keyframes';
+
+.sectionInfo {
+  @media(max-width: $breakpointMobile) {
+    display: none;
+  }
+  width: 20%;
+  height: 100%;
+  position: sticky;
+  top: 0;
+  z-index: -1;
+  background: $colorQuaternary;
+}
+
+.infoContainer {
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  gap: 2em;
+  text-align: center;
+  padding: 1em;
+  justify-content: center;
+}
+
+.infoContainer__info {
+  display: flex;
+  flex-flow: column;
+  gap: 0.5em;
+}
+
+.infoContainer__info__title {
+  color: $colorPrimary;
+  font-weight: 700;
+  font-size: 1.3em;
+  text-transform: uppercase;
+}
+
+.infoContainer__info__content {
+  color: $colorSecondary;
+  font-weight: 500;
+  font-size: 1.2em;
+}

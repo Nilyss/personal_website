@@ -28,14 +28,14 @@ export default function Carousel() {
       >
         <SwiperSlide className="swiper__slide">
           <p className="swiper__slide__description">
-            <h3 className="swiper__slide__description__title">
+            <h4 className="swiper__slide__description__title">
               Groupomania - Réseau social :
-            </h3>
-            <h4 className="swiper__slide__description__subtitle">
-              Front-end :
             </h4>
+            <h5 className="swiper__slide__description__subtitle">
+              Front-end :
+            </h5>
             <p className="swiper__slide__description__stack">React.js, Sass</p>
-            <h4 className="swiper__slide__description__subtitle">Back-end :</h4>
+            <h5 className="swiper__slide__description__subtitle">Back-end :</h5>
             <p className="swiper__slide__description__stack">
               Node.js, Express.js, MongoDB (ODM Mongoose)
             </p>
@@ -48,9 +48,9 @@ export default function Carousel() {
         </SwiperSlide>
         <SwiperSlide className="swiper__slide">
           <p className="swiper__slide__description">
-            <h3 className="swiper__slide__description__title">
+            <h4 className="swiper__slide__description__title">
               OhMyFood - Intégration maquette :
-            </h3>
+            </h4>
             <h4 className="swiper__slide__description__subtitle">
               Front-end :
             </h4>
@@ -66,10 +66,10 @@ export default function Carousel() {
         </SwiperSlide>
         <SwiperSlide className="swiper__slide">
           <p className="swiper__slide__description">
-            <h3 className="swiper__slide__description__title">
+            <h4 className="swiper__slide__description__title">
               Piiquante - Application web
-            </h3>
-            <h4 className="swiper__slide__description__subtitle">Back-end :</h4>
+            </h4>
+            <h5 className="swiper__slide__description__subtitle">Back-end :</h5>
             <p className="swiper__slide__description__stack">
               Node.js, Express.js, MongoDB (ODM Mongoose)
             </p>
@@ -82,12 +82,12 @@ export default function Carousel() {
         </SwiperSlide>
         <SwiperSlide className="swiper__slide">
           <p className="swiper__slide__description">
-            <h3 className="swiper__slide__description__title">
+            <h4 className="swiper__slide__description__title">
               Kanap - Site e-commerce :
-            </h3>
-            <h4 className="swiper__slide__description__subtitle">
-              Front-end :
             </h4>
+            <h5 className="swiper__slide__description__subtitle">
+              Front-end :
+            </h5>
             <p className="swiper__slide__description__stack">
               JavaScript ES6 - Connexion du front-end au back-end
             </p>

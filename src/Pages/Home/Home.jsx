@@ -9,11 +9,13 @@ import Info from '../../Components/Info/Info'
 // sections components
 import Profile from '../../Components/Profile/Profile'
 import Services from '../../Components/Services/Services'
+import PortFolio from '../../Components/PortFolio/PortFolio'
+import Education from '../../Components/Education/Education'
 
 // background components
 import FirstBackground from '../../Components/Background/FirstBackground'
 import SecondBackground from '../../Components/Background/SecondBackground'
-import PortFolio from '../../Components/PortFolio/PortFolio'
+import ThirdBackground from '../../Components/Background/ThirdBackground'
 
 export default function Home() {
   return (
@@ -24,10 +26,12 @@ export default function Home() {
         <Profile />
         <Services />
         <PortFolio />
+        <Education />
       </div>
       <div className="main__background">
         <FirstBackground />
         <SecondBackground />
+        <ThirdBackground />
       </div>
     </main>
   )

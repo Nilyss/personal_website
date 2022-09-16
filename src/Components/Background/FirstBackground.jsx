@@ -2,7 +2,7 @@
 import './_background.scss'
 
 // video
-import backgroundVideo from '../../Assets/Videos/bgHome.mp4'
+import backgroundVideo from '../../Assets/Videos/bgHome.webm'
 
 export default function FirstBackground() {
   return (

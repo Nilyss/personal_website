@@ -2,7 +2,7 @@
 import './_background.scss'
 
 // video
-import backgroundVideo from '../../Assets/Videos/bgPortFolio.mp4'
+import backgroundVideo from '../../Assets/Videos/bgPortFolio.webm'
 
 export default function ThirdBackground() {
   return (

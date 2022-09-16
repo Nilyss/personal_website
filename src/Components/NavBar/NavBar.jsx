@@ -1,5 +1,5 @@
 //  dependencies
-import { useNavigate } from 'react-router-dom'
+import { Link } from 'react-scroll'
 
 // hooks
 import { useContext } from 'react'
@@ -14,7 +14,6 @@ import ToggleNavBarButton from '../ToggleNavBarButton/ToggleNavBarButton'
 export default function NavBar() {
   // init hooks
   const { navState } = useContext(NavContext)
-  const navigate = useNavigate()
 
   return (
     <section
@@ -30,54 +29,59 @@ export default function NavBar() {
               <nav className="navBar__container__nav">
                 <ul className="navBar__container__nav__ul">
                   <li className="navBar__container__nav__ul__li">
-                    <button
-                      onClick={() => {
-                        navigate('/', { replace: true })
-                      }}
+                    <Link
+                      to="profile"
+                      spy={true}
+                      smooth={true}
+                      duration={500}
                       className="navBar__container__nav__li__button"
                     >
                       Accueil
-                    </button>
+                    </Link>
                   </li>
                   <li className="navBar__container__nav__ul__li">
-                    <button
-                      onClick={() => {
-                        navigate('/services', { replace: true })
-                      }}
+                    <Link
+                      to="services"
+                      spy={true}
+                      smooth={true}
+                      duration={500}
                       className="navBar__container__nav__li__button"
                     >
                       Services
-                    </button>
+                    </Link>
                   </li>
                   <li className="navBar__container__nav__ul__li">
-                    <button
-                      onClick={() => {
-                        navigate('/portfolio', { replace: true })
-                      }}
+                    <Link
+                      to="portFolio"
+                      spy={true}
+                      smooth={true}
+                      duration={500}
                       className="navBar__container__nav__li__button"
                     >
                       Porte folio
-                    </button>
+                    </Link>
                   </li>
                   <li className="navBar__container__nav__ul__li">
-                    <button
-                      onClick={() => {
-                        navigate('/education', { replace: true })
-                      }}
+                    <Link
+                      to="education"
+                      spy={true}
+                      smooth={true}
+                      duration={500}
                       className="navBar__container__nav__li__button"
                     >
                       Parcours
-                    </button>
+                    </Link>
                   </li>
                   <li className="navBar__container__nav__ul__li">
-                    <button
-                      onClick={() => {
-                        navigate('/home', { replace: true })
-                      }}
+                    <Link
+                      to="contact"
+                      spy={true}
+                      smooth={true}
+                      duration={500}
                       className="navBar__container__nav__li__button"
                     >
                       Contact
-                    </button>
+                    </Link>
                   </li>
                 </ul>
               </nav>

@@ -3,7 +3,7 @@ import './_services.scss'
 
 export default function Services() {
   return (
-    <section className="sectionServices">
+    <section id="services" className="sectionServices">
       <article className="sectionServices__container">
         <div className="sectionServices__container__intro">
           <h2 className="sectionServices__container__intro__title">Services</h2>

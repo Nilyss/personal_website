@@ -9,7 +9,7 @@ import profilePicture from '../../Assets/Images/pp.webp'
 
 export default function Profile() {
   return (
-    <section className="sectionProfile">
+    <section id="profile" className="sectionProfile">
       <article className="sectionProfile__container">
         <div className="sectionProfile__container__intro">
           <p className="sectionProfile__container__intro__subtitle">

@@ -4,7 +4,7 @@ import Carousel from '../Carousel/Carousel'
 
 export default function PortFolio() {
   return (
-    <section className="sectionPortFolioDescription">
+    <section id="portFolio" className="sectionPortFolioDescription">
       <article className="sectionPortFolioDescription__container">
         <div className="sectionPortFolioDescription__container__intro">
           <h2 className="sectionPortFolioDescription__container__intro__title">

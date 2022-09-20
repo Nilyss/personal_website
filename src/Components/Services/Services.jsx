@@ -1,12 +1,17 @@
 // styles
 import './_services.scss'
+import BackgroundAlt from '../Background/Background-Alt'
 
 export default function Services() {
   return (
-    <section className="sectionServices">
+    <section id="services" className="sectionServices">
+      <BackgroundAlt />
       <article className="sectionServices__container">
         <div className="sectionServices__container__intro">
-          <h2 className="sectionServices__container__intro__title">Services</h2>
+          <h2 className="sectionServices__container__intro__title">
+            <span className="material-symbols-outlined ecoIcon">eco</span>
+            Services
+          </h2>
           <h3 className="sectionServices__container__intro__subtitle">
             Développement Web
           </h3>

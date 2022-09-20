@@ -27,7 +27,7 @@ export default function Carousel() {
         className="swiper"
       >
         <SwiperSlide className="swiper__slide">
-          <p className="swiper__slide__description">
+          <div className="swiper__slide__description">
             <h4 className="swiper__slide__description__title">
               Groupomania - Réseau social :
             </h4>
@@ -39,7 +39,7 @@ export default function Carousel() {
             <p className="swiper__slide__description__stack">
               Node.js, Express.js, MongoDB (ODM Mongoose)
             </p>
-          </p>
+          </div>
           <img
             className="swiper__slide__img"
             src={Groupomania}
@@ -47,7 +47,7 @@ export default function Carousel() {
           />
         </SwiperSlide>
         <SwiperSlide className="swiper__slide">
-          <p className="swiper__slide__description">
+          <div className="swiper__slide__description">
             <h4 className="swiper__slide__description__title">
               OhMyFood - Intégration maquette :
             </h4>
@@ -57,7 +57,7 @@ export default function Carousel() {
             <p className="swiper__slide__description__stack">
               HTML5, CSS3 (Sass)
             </p>
-          </p>
+          </div>
           <img
             className="swiper__slide__img"
             src={OhMyFood}
@@ -65,7 +65,7 @@ export default function Carousel() {
           />
         </SwiperSlide>
         <SwiperSlide className="swiper__slide">
-          <p className="swiper__slide__description">
+          <div className="swiper__slide__description">
             <h4 className="swiper__slide__description__title">
               Piiquante - Application web
             </h4>
@@ -73,7 +73,7 @@ export default function Carousel() {
             <p className="swiper__slide__description__stack">
               Node.js, Express.js, MongoDB (ODM Mongoose)
             </p>
-          </p>
+          </div>
           <img
             className="swiper__slide__img"
             src={Piiquante}
@@ -81,7 +81,7 @@ export default function Carousel() {
           />
         </SwiperSlide>
         <SwiperSlide className="swiper__slide">
-          <p className="swiper__slide__description">
+          <div className="swiper__slide__description">
             <h4 className="swiper__slide__description__title">
               Kanap - Site e-commerce :
             </h4>
@@ -91,7 +91,7 @@ export default function Carousel() {
             <p className="swiper__slide__description__stack">
               JavaScript ES6 - Connexion du front-end au back-end
             </p>
-          </p>
+          </div>
           <img
             className="swiper__slide__img"
             src={Kanap}

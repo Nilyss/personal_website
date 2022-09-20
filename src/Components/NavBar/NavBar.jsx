@@ -1,5 +1,5 @@
 //  dependencies
-import { Link } from 'react-scroll'
+import { Link } from 'react-scroll' // https://www.npmjs.com/package/react-scroll dependencies for smooth section scrolling between components
 
 // hooks
 import { useContext } from 'react'
@@ -41,6 +41,7 @@ export default function NavBar() {
                   </li>
                   <li className="navBar__container__nav__ul__li">
                     <Link
+                      activeCLass="active"
                       to="services"
                       spy={true}
                       smooth={true}

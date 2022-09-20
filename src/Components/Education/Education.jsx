@@ -1,5 +1,6 @@
 // styles
 import './_education.scss'
+import Background from '../Background/Background'
 
 export default function Education() {
   return (
@@ -7,6 +8,7 @@ export default function Education() {
       <article className="sectionEducation__container">
         <div className="sectionEducation__container__intro">
           <h2 className="sectionEducation__container__intro__title">
+            <span className="material-symbols-outlined ecoIcon">eco</span>
             Parcours
           </h2>
         </div>
@@ -47,13 +49,14 @@ export default function Education() {
                   Anglais:
                 </h4>
                 <p className="sectionEducation__container__body__education__ul__li__text">
-                  Niveau B1
+                  Niveau B2
                 </p>
               </li>
             </ul>
           </div>
         </div>
       </article>
+      <Background />
     </section>
   )
 }

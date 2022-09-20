@@ -23,6 +23,22 @@
   line-height: 1.5em;
 }
 
+@mixin lineSubtitle {
+  position: relative;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  &::after {
+    content: '';
+    position: absolute;
+    width: 75%;
+    height: 3px;
+    border-radius: 8px;
+    background: radial-gradient(circle, rgba(229,222,152,1) 0%, rgba(230,202,112,1) 82%, rgba(212,164,71,1) 100%);
+    top: 1.5em;
+  }
+}
+
 // buttons
 @mixin submitButton {
   display: flex;

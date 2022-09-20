@@ -4,24 +4,32 @@
 @import '/src/Utils/Styles/keyframes';
 
 .sectionContact {
-  width: 200%;
+  @media (max-width: $breakpointMobile) {
+    height: unset;
+  }
+  display:flex;
+  justify-content: center;
   height: 100vh;
+  //background: $colorPrimary;
+  background-image: url('../../Assets/Images/bg2.webp');
+  background-size: cover;
+  margin-top: 5em;
+  border: 10px solid black;
 }
 
 .sectionContact__container {
+  @media (max-width: $breakpointMobile) {
+    height: unset;
+    margin-top: 5em;
+  }
   display: flex;
+  flex-flow: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   gap: 1em;
+  padding: 1em;
   width: 100%;
   height: 100%;
-  flex-flow: column;
-  background-image: radial-gradient(
-                  120% 100% at 110% 0,
-                  $colorTertiary 0,
-                  $colorPrimary 100%
-  );
-  padding: 1em;
 }
 
 .sectionContact__container__intro {
@@ -34,33 +42,29 @@
 
 .sectionContact__container__intro__title {
 @include titleStyle;
+  color: #f1f1f1;
+  @include lineSubtitle;
 }
 
 .sectionContact__container__body {
-  color: #f1f1f1;
-  background: $colorQuaternary;
-  border-radius: $borderRadiusCards;
-  box-shadow: $boxShadowCard;
-  gap: 2em;
   padding: 2em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-flow: column;
-  width: 50%;
-  height: 100%;
+  background: $colorQuaternary;
+  border-radius: 8px;
+  width: 25%;
+  box-shadow: $boxShadowCard;
+  border: 2px solid palegoldenrod;
 }
 
 .sectionContact__container__body__form {
   display: flex;
-  justify-content: space-around;
   flex-flow: column;
-  width: 100%;
-  height: 100%;
+  gap: 1.5em;
+  color: #f1f1f1;
 }
 
 .sectionContact__container__body__form__label {
-  margin-bottom: -2em;
+  margin-bottom: -1em;
+  @include lineSubtitle;
 }
 
 .sectionContact__container__body__form__input {

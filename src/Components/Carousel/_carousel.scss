@@ -15,7 +15,7 @@
   object-fit: cover;
   cursor: pointer;
   border-radius: 8px;
-  border: 2px solid $colorQuaternary;
+  border: 2px solid palegoldenrod;
   box-shadow: $boxShadowCard;
 }
 
@@ -40,6 +40,7 @@
     font-size: 1.8em;
     font-weight: 700;
     margin-bottom: 2em;
+    @include lineSubtitle;
   }
   &__subtitle {
     font-size: 1.5em;

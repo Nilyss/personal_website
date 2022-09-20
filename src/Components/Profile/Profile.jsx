@@ -6,11 +6,12 @@ import './_profile.scss'
 
 // images
 import profilePicture from '../../Assets/Images/pp.webp'
+import Background from '../Background/Background'
 
 export default function Profile() {
   return (
-    <section id="profile" className="sectionProfile">
-      <article className="sectionProfile__container">
+    <section className="sectionProfile">
+      <article id="profile" className="sectionProfile__container">
         <div className="sectionProfile__container__intro">
           <p className="sectionProfile__container__intro__subtitle">
             Bonjour, je m'appelle
@@ -48,6 +49,7 @@ export default function Profile() {
           </p>
         </div>
       </article>
+      <Background />
     </section>
   )
 }

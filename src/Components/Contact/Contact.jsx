@@ -42,7 +42,10 @@ export default function Contact() {
     <section id="contact" className="sectionContact">
       <article className="sectionContact__container">
         <div className="sectionContact__container__intro">
-          <h2 className="sectionContact__container__intro__title">Contact</h2>
+          <h2 className="sectionContact__container__intro__title">
+            <span className="material-symbols-outlined ecoIcon">eco</span>
+            Contact
+          </h2>
         </div>
         <div className="sectionContact__container__body">
           <form

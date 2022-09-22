@@ -4,27 +4,32 @@
 @import '/src/Utils/Styles/keyframes';
 
 .sectionPortFolioDescription {
+  @media (max-width: $breakpointTablet) {
+    height: unset;
+  }
   width: 100%;
   height: 100vh;
 }
 
 .sectionPortFolioDescription__container {
+  @media (max-width: $breakpointTablet) {
+    height: unset;
+    margin-top: 5em;
+    margin-bottom: 2em;
+  }
   width: 100%;
-  height: 100%;
+  height: 100vh;
   display: flex;
   gap: 1em;
   flex-flow: column;
   justify-content: center;
   background: $colorPrimary;
-  //background-image: radial-gradient(
-  //                120% 100% at 110% 0,
-  //                $colorTertiary 0,
-  //                $colorPrimary 100%
-  //);
-  padding: 1em;
 }
 
 .sectionPortFolioDescription__container__intro {
+  @media (max-width: $breakpointTablet) {
+    margin-bottom: 5em;
+  }
   display: flex;
   flex-flow: column;
   text-align: center;
@@ -32,11 +37,11 @@
 }
 
 .sectionPortFolioDescription__container__intro__title {
-@include titleStyle;
+  @include titleStyle;
 }
 
 .sectionPortFolioDescription__container__intro__subtitle {
-@include subtitleStyle;
+  @include subtitleStyle;
   @include lineSubtitle;
 }
 

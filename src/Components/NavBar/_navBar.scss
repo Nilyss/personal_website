@@ -3,9 +3,31 @@
 @import '/src/Utils/Styles/mixins';
 @import '/src/Utils/Styles/keyframes';
 
+.sectionNavBar {
+  @media (max-width: $breakpointTablet) {
+    margin-left: -30%;
+  }
+  @media (max-width: $breakpointMobile) {
+    margin-left: unset;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+  margin-left: -20%;
+}
+
 //********** Nav Bar Style **********
 
+.modal {
+  position: sticky;
+  top: 0;
+}
+
 .navBar__container {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
   background-image: radial-gradient(
     100% 100% at 0% 0,
     $colorTertiary 0,
@@ -14,16 +36,12 @@
   height: 100vh;
 }
 
-.navBar__container__nav {
-  padding-top: 50%;
-}
-
 .navBar__container__nav__ul {
   display: flex;
   flex-flow: column;
   align-items: center;
   justify-content: center;
-  gap: 2em;
+  gap: 3em;
   text-align: center;
   min-height: 500px;
 }
@@ -46,7 +64,7 @@
 
 .toggleAnimationTrue {
   transform: translateX(0);
-  transition: All 500ms cubic-bezier(.55,.8,.11,1.14)
+  transition: All 500ms cubic-bezier(0.55, 0.8, 0.11, 1.14);
 }
 
 .toggleAnimationFalse {
@@ -56,16 +74,22 @@
 
 // ********** Toggle Nav Bar : made in width **********
 
-.modal {
-  position: sticky;
-  top: 0;
-  left: 0;
-}
-
 .toggleTrue {
+  @media (max-width: $breakpointTablet) {
+    width: 30%;
+  }
+  @media (max-width: $breakpointMobile) {
+    width: 100%;
+  }
   width: 20%;
 }
 
 .toggleFalse {
+  @media (max-width: $breakpointTablet) {
+    width: 30%;
+  }
+  @media (max-width: $breakpointMobile) {
+    width: 100%;
+  }
   width: 20%;
 }

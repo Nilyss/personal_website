@@ -1,0 +1,86 @@
+// import SCSS Utils
+@import '/src/Utils/Styles/variables';
+@import '/src/Utils/Styles/mixins';
+@import '/src/Utils/Styles/keyframes';
+
+.sectionPortFolioDescription {
+  @media (max-width: $breakpointTablet) {
+    height: unset;
+  }
+  width: 100%;
+  height: 100vh;
+}
+
+.sectionPortFolioDescription__container {
+  @media (max-width: $breakpointTablet) {
+    height: unset;
+    margin-top: 5em;
+    margin-bottom: 2em;
+  }
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  gap: 1em;
+  flex-flow: column;
+  justify-content: center;
+  background: $colorPrimary;
+}
+
+.sectionPortFolioDescription__container__intro {
+  @media (max-width: $breakpointTablet) {
+    margin-bottom: 5em;
+  }
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+  color: #000000;
+}
+
+.sectionPortFolioDescription__container__intro__title {
+  @include titleStyle;
+}
+
+.sectionPortFolioDescription__container__intro__subtitle {
+  @include subtitleStyle;
+  @include lineSubtitle;
+}
+
+.sectionPortFolioDescription__container__list {
+  color: #f1f1f1;
+  background: $colorQuaternary;
+  border-radius: $borderRadiusCards;
+  box-shadow: $boxShadowCard;
+  gap: 2em;
+  padding: 2em;
+  display: flex;
+  flex-flow: column;
+}
+
+.sectionPortFolioDescription__container__list__ul {
+  display: flex;
+  flex-flow: column;
+  gap: 2em;
+}
+
+.sectionPortFolioDescription__container__list__ul__li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  flex-flow: wrap;
+}
+
+.sectionPortFolioDescription__container__list__ul__li__title {
+  width: 90%;
+  font-size: 1.3em;
+  font-weight: 700;
+}
+
+.sectionPortFolioDescription__container__list__ul__li__paragraph {
+  font-size: 1.2em;
+}
+
+.listStyle {
+  font-size: 2em;
+  transform: rotate(90deg);
+  color: $colorPrimary;
+}

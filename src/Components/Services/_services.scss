@@ -1,0 +1,87 @@
+// import SCSS Utils
+@import '/src/Utils/Styles/variables';
+@import '/src/Utils/Styles/mixins';
+@import '/src/Utils/Styles/keyframes';
+
+.sectionServices {
+  @media (max-width: $breakpointTablet) {
+    height: unset;
+  }
+  display: flex;
+  background: $colorPrimary;
+  //align-self: flex-end;
+  height: 100vh;
+}
+
+.sectionServices__container {
+  @media (max-width: $breakpointTablet) {
+    height: unset;
+    margin-top: 5em;
+    margin-bottom: 2em;
+  }
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  padding: 1em;
+  width: 100%;
+  height: 100%;
+}
+
+.sectionServices__container__intro {
+  @media(max-width: $breakpointTablet) {
+    margin-bottom: 5em;
+  }
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+  color: #000000;
+}
+
+.sectionServices__container__intro__title {
+  @include titleStyle;
+}
+
+.sectionServices__container__intro__subtitle {
+  @include subtitleStyle;
+  @include lineSubtitle;
+}
+
+.cardWrapper {
+  display: flex;
+  flex-flow: column;
+  gap: 2em;
+}
+
+.sectionServices__container__card {
+  color: #f1f1f1;
+  background: $colorQuaternary;
+  border-radius: $borderRadiusCards;
+  box-shadow: $boxShadowCard;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid palegoldenrod;
+}
+
+.sectionServices__container__card__titleContainer {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  margin-top: 1em;
+  @include smallTitleStyle;
+}
+
+.sectionServices__container__card__titleContainer__title {
+  width: fit-content;
+  @include lineSubtitle;
+}
+
+.sectionServices__container__card__titleContainer__icons {
+  font-size: 2em;
+  color: $colorSecondary;
+}
+
+.sectionServices__container__card__body__text {
+  @include paragraphStyle;
+}

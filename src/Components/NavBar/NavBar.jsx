@@ -1,5 +1,5 @@
 //  dependencies
-import { Link } from 'react-router-dom'
+import { Link } from 'react-scroll' // https://www.npmjs.com/package/react-scroll dependencies for smooth section scrolling between components
 
 // hooks
 import { useContext } from 'react'
@@ -16,22 +16,36 @@ export default function NavBar() {
   const { navState } = useContext(NavContext)
 
   return (
-    <section className="sectionNavBar">
-      <ToggleNavBarButton />
+    <section
+      className={`sectionNavBar ${
+        navState.showNav ? 'toggleTrue' : 'toggleFalse'
+      }`}
+    >
       <div className="modal">
+        <ToggleNavBarButton />
         {navState.showNav ? (
           <div className="toggleAnimationTrue">
             <div className="navBar__container">
               <nav className="navBar__container__nav">
                 <ul className="navBar__container__nav__ul">
                   <li className="navBar__container__nav__ul__li">
-                    <Link to="/" className="navBar__container__nav__li__button">
+                    <Link
+                      to="profile"
+                      spy={true}
+                      smooth={true}
+                      duration={500}
+                      className="navBar__container__nav__li__button"
+                    >
                       Accueil
                     </Link>
                   </li>
                   <li className="navBar__container__nav__ul__li">
                     <Link
-                      to="/services"
+                      activeCLass="active"
+                      to="services"
+                      spy={true}
+                      smooth={true}
+                      duration={500}
                       className="navBar__container__nav__li__button"
                     >
                       Services
@@ -39,7 +53,10 @@ export default function NavBar() {
                   </li>
                   <li className="navBar__container__nav__ul__li">
                     <Link
-                      to="/portefolio"
+                      to="portFolio"
+                      spy={true}
+                      smooth={true}
+                      duration={500}
                       className="navBar__container__nav__li__button"
                     >
                       Porte folio
@@ -47,7 +64,10 @@ export default function NavBar() {
                   </li>
                   <li className="navBar__container__nav__ul__li">
                     <Link
-                      to="/education"
+                      to="education"
+                      spy={true}
+                      smooth={true}
+                      duration={500}
                       className="navBar__container__nav__li__button"
                     >
                       Parcours
@@ -55,7 +75,10 @@ export default function NavBar() {
                   </li>
                   <li className="navBar__container__nav__ul__li">
                     <Link
-                      to="/contact"
+                      to="contact"
+                      spy={true}
+                      smooth={true}
+                      duration={500}
                       className="navBar__container__nav__li__button"
                     >
                       Contact
@@ -66,7 +89,39 @@ export default function NavBar() {
             </div>
           </div>
         ) : (
-          <div className="toggleAnimationFalse"></div>
+          <div className="toggleAnimationFalse">
+            <div className="navBar__container">
+              <nav className="navBar__container__nav">
+                <ul className="navBar__container__nav__ul">
+                  <li className="navBar__container__nav__ul__li">
+                    <button className="navBar__container__nav__li__button">
+                      Accueil
+                    </button>
+                  </li>
+                  <li className="navBar__container__nav__ul__li">
+                    <button className="navBar__container__nav__li__button">
+                      Services
+                    </button>
+                  </li>
+                  <li className="navBar__container__nav__ul__li">
+                    <button className="navBar__container__nav__li__button">
+                      Porte folio
+                    </button>
+                  </li>
+                  <li className="navBar__container__nav__ul__li">
+                    <button className="navBar__container__nav__li__button">
+                      Parcours
+                    </button>
+                  </li>
+                  <li className="navBar__container__nav__ul__li">
+                    <button className="navBar__container__nav__li__button">
+                      Contact
+                    </button>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
         )}
       </div>
     </section>

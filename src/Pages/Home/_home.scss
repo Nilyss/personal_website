@@ -2,3 +2,41 @@
 @import '/src/Utils/Styles/variables';
 @import '/src/Utils/Styles/mixins';
 @import '/src/Utils/Styles/keyframes';
+
+.main {
+  display: flex;
+  flex-flow: wrap;
+}
+
+.main__sections {
+  @media(max-width: $breakpointTablet) {
+    width: 70%;
+  }
+  @media(max-width: $breakpointMobile) {
+    width: 100%;
+  }
+  width: 80%;
+  display: flex;
+  flex-flow: column;
+  background: $colorPrimary;
+}
+
+.ecoIcon {
+  background-image: radial-gradient(circle, rgba(229,222,152,1) 0%, rgba(230,202,112,1) 82%, rgba(212,164,71,1) 100%);
+  background-clip: border-box;
+  background-size: 100% auto;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-size: 1em;
+  margin-right: .5em;
+}
+
+.ecoIcon--alt {
+  transform: rotate(180deg);
+  background-image: radial-gradient(circle, rgba(229,222,152,1) 0%, rgba(230,202,112,1) 82%, rgba(212,164,71,1) 100%);
+  background-clip: border-box;
+  background-size: 100% auto;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-size: 1em;
+}

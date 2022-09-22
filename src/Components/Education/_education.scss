@@ -4,7 +4,7 @@
 @import '/src/Utils/Styles/keyframes';
 
 .sectionEducation {
-  @media (max-width: $breakpointMobile) {
+  @media (max-width: $breakpointTablet) {
     height: unset;
   }
   background: $colorPrimary;
@@ -13,9 +13,10 @@
 }
 
 .sectionEducation__container {
-  @media (max-width: $breakpointMobile) {
+  @media (max-width: $breakpointTablet) {
     height: unset;
     margin-top: 5em;
+    margin-bottom: 2em;
   }
   display: flex;
   flex-flow: column;
@@ -27,6 +28,9 @@
 }
 
 .sectionEducation__container__intro {
+  @media(max-width: $breakpointTablet) {
+    margin-bottom: 5em;
+  }
   display: flex;
   flex-flow: column;
   text-align: center;

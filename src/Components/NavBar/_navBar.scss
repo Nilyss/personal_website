@@ -4,11 +4,15 @@
 @import '/src/Utils/Styles/keyframes';
 
 .sectionNavBar {
-  @media(max-width: $breakpointMobile) {
+  @media (max-width: $breakpointTablet) {
+    margin-left: -30%;
+  }
+  @media (max-width: $breakpointMobile) {
     margin-left: unset;
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 2;
   }
   margin-left: -20%;
 }
@@ -60,7 +64,7 @@
 
 .toggleAnimationTrue {
   transform: translateX(0);
-  transition: All 500ms cubic-bezier(.55,.8,.11,1.14)
+  transition: All 500ms cubic-bezier(0.55, 0.8, 0.11, 1.14);
 }
 
 .toggleAnimationFalse {
@@ -71,14 +75,20 @@
 // ********** Toggle Nav Bar : made in width **********
 
 .toggleTrue {
-  @media(max-width: $breakpointMobile) {
+  @media (max-width: $breakpointTablet) {
+    width: 30%;
+  }
+  @media (max-width: $breakpointMobile) {
     width: 100%;
   }
   width: 20%;
 }
 
 .toggleFalse {
-  @media(max-width: $breakpointMobile) {
+  @media (max-width: $breakpointTablet) {
+    width: 30%;
+  }
+  @media (max-width: $breakpointMobile) {
     width: 100%;
   }
   width: 20%;

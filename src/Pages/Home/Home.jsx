@@ -11,6 +11,7 @@ import Services from '../../Components/Services/Services'
 import PortFolio from '../../Components/PortFolio/PortFolio'
 import Education from '../../Components/Education/Education'
 import Contact from '../../Components/Contact/Contact'
+import Footer from '../../Components/Footer/footer'
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
           <Contact />
         </div>
       </main>
+      <Footer />
     </>
   )
 }

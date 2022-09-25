@@ -3,13 +3,13 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom' // router depend
 
 // provider
 import { NavContextProvider } from './Context/NavContext' // toggle nav panel
+import { ConfirmContextProvider } from './Context/ConfirmationContext' // confirm modal after form submit
 
 // styles
 import GlobalStyle from './Utils/Styles/GlobalStyle' // reset css
 
 // pages
 import Home from './Pages/Home/Home'
-import NotExistingPage from './Pages/NotExistingPage/NotExistingPage'
 
 export default function App() {
   return (
@@ -17,10 +17,11 @@ export default function App() {
       <BrowserRouter>
         <GlobalStyle />
         <NavContextProvider>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="*" element={<NotExistingPage />} />
-          </Routes>
+          <ConfirmContextProvider>
+            <Routes>
+              <Route path="/*" element={<Home />} />
+            </Routes>
+          </ConfirmContextProvider>
         </NavContextProvider>
       </BrowserRouter>
     </>

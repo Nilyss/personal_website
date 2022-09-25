@@ -1,15 +1,21 @@
 // libraries
-import emailjs from '@emailjs/browser'
+import emailjs from '@emailjs/browser' // https://www.npmjs.com/package/@emailjs/browser
 import EmailJsConfig from '../../Utils/EmailJsConfig'
 
 // hooks
-import { useRef } from 'react'
+import { useContext, useRef, useState } from 'react'
+import { ConfirmationContext } from '../../Context/ConfirmationContext'
 
 // styles
 import './_contact.scss'
 
+// components
+import Confirmation from '../Confirmation/Confirmation'
+
 export default function Contact() {
   // init hooks
+  const { confirmState, toggleConfirm } = useContext(ConfirmationContext)
+  const [error, setError] = useState('')
   const form = useRef()
 
   //  handle function for sending mail with emailjs libraries
@@ -25,17 +31,23 @@ export default function Contact() {
       )
       .then(
         (res) => {
-          console.log(res.text)
+          if (res.status === 200) {
+            toggleConfirm('confirmOn')
+            // Cleaning inputs after submit
+            e.target['firstName'].value = ''
+            e.target['lastName'].value = ''
+            e.target['emailAddress'].value = ''
+            e.target['message'].value = ''
+          } else {
+            setError(
+              `Le message n'as pu être envoyé, veuillez réessayer plus tard ! Erreur : ${res.status}`
+            )
+          }
         },
         (err) => {
           console.log(err.text)
         }
       )
-    // Cleaning inputs after submit
-    e.target['firstName'].value = ''
-    e.target['lastName'].value = ''
-    e.target['emailAddress'].value = ''
-    e.target['message'].value = ''
   }
 
   return (
@@ -107,8 +119,14 @@ export default function Contact() {
             >
               Envoyer
             </button>
+            <p className="sectionContact__container__body__form__error">
+              {error}
+            </p>
           </form>
         </div>
+      </article>
+      <article className="confirmationWrapper">
+        {confirmState.displayConfirm && <Confirmation />}
       </article>
     </section>
   )

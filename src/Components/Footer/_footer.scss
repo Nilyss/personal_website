@@ -1,0 +1,45 @@
+// import SCSS Utils
+@import '/src/Utils/Styles/variables';
+@import '/src/Utils/Styles/mixins';
+
+.footer {
+  width: 100%;
+  display: flex;
+  background: $colorQuaternary;
+}
+
+.footer__nav {
+  width: 100%;
+  display: flex;
+}
+
+.footer__nav__ul {
+  @media(max-width: $breakpointMobile) {
+    flex-flow: column;
+    gap: 1em;
+  }
+  width: 100%;
+  padding: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.footer__nav__ul__li {
+  font-weight: 700;
+  font-size: 1em;
+  list-style: none;
+  &__link {
+    text-decoration: none;
+    color: #f1f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    cursor: pointer;
+  }
+}
+
+.react-icons {
+  font-size: 2em;
+}

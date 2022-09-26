@@ -14,7 +14,9 @@
   height: 100vh;
   background-image: url('../../Assets/Images/bg2.webp');
   background-size: cover;
-  border: 12px solid $colorQuaternary;
+  border-top: 12px solid $colorQuaternary;
+  border-left: 12px solid $colorQuaternary;
+  border-right: 12px solid $colorQuaternary;
 }
 
 .sectionContact__container {

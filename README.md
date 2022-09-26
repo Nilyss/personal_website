@@ -16,4 +16,8 @@ sass@1.54.9
 styled-components@5.3.5
 swiper@8.4.0
 typewriter-effect@2.19.0
+react-icons@4.4.0
+
+-- dev
+gh-pages@4.0.0
 ```

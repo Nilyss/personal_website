@@ -41,11 +41,15 @@ export default function Profile() {
         </div>
         <div className="sectionProfile__container__profile">
           <p className="sectionProfile__container__profile__text">
-            Passionné par le développement web, avec une appétence pour la
-            partie front-end, tout en appréciant également la partie back-end,
-            je recherche une alternance étant déjà diplômé chez OpenClassrooms
-            de la formation développeur web (RNCP 36076), afin de parfaire mes
-            connaissances du métier.
+            Passionné par le développement web, je recherche un poste de
+            développeur web junior front-end, avec une préférence pour les
+            technologies Angular ou React.js. <br />
+            <br /> J'ai également des notions de développement côté back-end,
+            via node.js et son framework express.
+            <br />
+            <br />
+            Je passe beaucoup de mon temps libre à parfaire mes connaissances du
+            framework Angular, via des projets personnels.
           </p>
         </div>
       </article>

@@ -23,7 +23,7 @@ export default function Education() {
                   OpenClassrooms:
                 </h4>
                 <p className="sectionEducation__container__body__education__ul__li__text">
-                  Développeur web (RNCP36076), 2022
+                  Développeur web Titre niveau 5 (bac+2) RNCP36076, 2022
                 </p>
               </li>
               <li className="sectionEducation__container__body__education__ul__li">

@@ -1,4 +1,5 @@
 // components
+import Cards from '../Cards/Cards'
 import Carousel from '../Carousel/Carousel'
 
 // styles
@@ -17,7 +18,8 @@ export default function PortFolio() {
             Projets réalisés
           </h3>
         </div>
-        <Carousel />
+        <Cards />
+        {/*<Carousel />*/}
       </article>
     </section>
   )

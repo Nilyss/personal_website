@@ -1,0 +1,52 @@
+{
+  "projects": [
+    {
+      "name": "WebApp — nailissa.fr",
+      "stack": "Angular 2+ | NgRx | Node.js",
+      "overview": "Création d'un site pour l'entreprise Nailissa, prothésiste ongulaire de La Rochelle. Front-end en Angular 2+, programmation réactive (RxJs), utilisation de NgRx pour gérer les datas. Back-end en Node.js pour la sauvegarde d'utilisateurs, et de prestations.",
+      "image": "",
+      "url": "",
+      "YtUrl": ""
+    },
+    {
+      "name": "Application Mobile — Vente de Pizza",
+      "stack": "React.Native | Redux-toolkit | Expo",
+      "overview": "Création d'une application mobile - test technique soumis à un collègue auquel je me suis soumis également, par curiosité.",
+      "image": "",
+      "url": "",
+      "YtUrl": ""
+    },
+    {
+      "name": " WebApp — Clone de Netflix",
+      "stack": "Angular 2+ | Node.js",
+      "overview": "Clone du site web Netflix afin d'approfondir Angular 2+ Compte utilisateur sur API REST crée pour l'occasion, Requête API existante pour les données relatives au films, et séries.",
+      "image": "",
+      "url": "",
+      "YtUrl": ""
+    },
+    {
+      "name": "WebApp — Porte-Folio",
+      "stack": "React.js",
+      "overview": "Réalisation de mon porte-folio : Le présent site.",
+      "image": "",
+      "url": "",
+      "YtUrl": ""
+    },
+    {
+      "name": "WebApp - Réseau Social",
+      "stack": "React.js | Redux-toolkit | Node.js",
+      "overview": "Création d'un réseau social 'From Scratch', front-end comme back-end. Projet OpenClassrooms diplômant.",
+      "image": "",
+      "url": "",
+      "YtUrl": ""
+    },
+    {
+      "name": "WebApp - API Rest",
+      "stack": "Node.js",
+      "overview": "Création d'une API Rest en Node.js, utilisé un front-end déjà existant.",
+      "image": "",
+      "url": "",
+      "YtUrl": ""
+    }
+  ]
+}

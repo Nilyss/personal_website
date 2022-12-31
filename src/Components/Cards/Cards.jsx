@@ -3,8 +3,8 @@ import { useEffect, useState } from 'react'
 import HttpService from '../../data/data.service.js'
 // styles
 import './_cards.scss'
+// services
 const http = new HttpService()
-
 export default function Cards() {
   const [projects, setProjects] = useState([])
 
@@ -14,44 +14,42 @@ export default function Cards() {
       setProjects(data)
     })
   }, [])
-
+  console.log('projects =>', projects)
   return (
-    <div className="sectionPortFolioDescription__container__cards">
+    <ul className="sectionPortFolioDescription__container__cards">
       {projects &&
         projects.map((project, index) => (
-          <div
+          <li
+            className="sectionPortFolioDescription__container__cards__wrapper"
             key={index}
-            className="sectionPortFolioDescription__container__cards__card"
           >
-            <div className="sectionPortFolioDescription__container__cards__card__header">
-              <h3 className="sectionPortFolioDescription__container__cards__card__header__title">
+            <div className="sectionPortFolioDescription__container__cards__wrapper__header">
+              <h3 className="sectionPortFolioDescription__container__cards__wrapper__header__title">
                 {project.name}
               </h3>
-              <p className="sectionPortFolioDescription__container__cards__card__header__date">
-                {project.stack}
-              </p>
             </div>
-            <div className="sectionPortFolioDescription__container__cards__card__content">
-              <p className="sectionPortFolioDescription__container__cards__card__content__description">
-                {project.overview}
-              </p>
-              <div className="sectionPortFolioDescription__container__cards__card__content__technos">
-                <span className="sectionPortFolioDescription__container__cards__card__content__technos__techno">
-                  {project.image}
+            <p className="sectionPortFolioDescription__container__cards__wrapper__overview">
+              {project.overview}
+            </p>
+            <div className="sectionPortFolioDescription__container__cards__wrapper__body">
+              <figure className="sectionPortFolioDescription__container__cards__wrapper__body__figure">
+                <img
+                  className="sectionPortFolioDescription__container__cards__wrapper__body__figure__picture"
+                  src={project.image}
+                  alt="Preview of the project"
+                />
+              </figure>
+            </div>
+            <div className="sectionPortFolioDescription__container__cards__wrapper__footer">
+              <button className="sectionPortFolioDescription__container__cards__wrapper__footer__details">
+                Détails du projet
+                <span className="material-symbols-outlined sectionPortFolioDescription__container__cards__wrapper__footer__icons">
+                  arrow_forward_ios
                 </span>
-              </div>
+              </button>
             </div>
-            <div className="sectionPortFolioDescription__container__cards__card__footer">
-              <a
-                href={project.url}
-                className="sectionPortFolioDescription__container__cards__card__footer__link"
-              >
-                <span className="material-symbols-outlined linkIcon">link</span>
-                Lien
-              </a>
-            </div>
-          </div>
+          </li>
         ))}
-    </div>
+    </ul>
   )
 }

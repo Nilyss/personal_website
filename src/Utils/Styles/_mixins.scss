@@ -1,20 +1,24 @@
 // import SCSS variables
 @import './variables';
+@import './keyframes';
 
 // styles fonts
 @mixin titleStyle {
   font-size: 2em;
   font-weight: 700;
+  filter: $dropShadow;
 }
 
 @mixin subtitleStyle {
   font-size: 1.5em;
   font-weight: 700;
+  filter: $dropShadow;
 }
 
 @mixin smallTitleStyle {
   font-size: 1.2em;
   font-weight: 700;
+  filter: $dropShadow;
 }
 
 @mixin paragraphStyle {
@@ -34,8 +38,14 @@
     width: 75%;
     height: 3px;
     border-radius: 8px;
-    background: radial-gradient(circle, rgba(229,222,152,1) 0%, rgba(230,202,112,1) 82%, rgba(212,164,71,1) 100%);
+    background: radial-gradient(
+      circle,
+      rgba(229, 222, 152, 1) 0%,
+      rgba(230, 202, 112, 1) 82%,
+      rgba(212, 164, 71, 1) 100%
+    );
     top: 1.5em;
+    filter: $dropShadow;
   }
 }
 
@@ -63,9 +73,9 @@
   }
   &:hover {
     background-image: radial-gradient(
-                    100% 100% at 120% 0,
-                    $colorTertiary 0,
-                    $colorPrimary 100%
+      100% 100% at 120% 0,
+      $colorTertiary 0,
+      $colorPrimary 100%
     );
     box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
       rgba(45, 35, 66, 0.3) 0 7px 13px -3px, $colorPrimary 0 -3px 0 inset;
@@ -116,7 +126,7 @@
     border-radius: 8px;
     display: block;
     height: 2.3em;
-    top: .35em;
+    top: 0.35em;
     left: 0.5em;
     width: 94%;
     position: absolute;
@@ -138,4 +148,24 @@
 @mixin typewriting {
   font-weight: lighter;
   color: #f1f1f1;
+}
+
+@mixin spinner {
+  width: 56px;
+  height: 56px;
+  display: grid;
+  animation: spinnerAnimation 4s infinite;
+  &:before, &:after {
+    content: "";
+    grid-area: 1/1;
+    border: 9px solid;
+    border-radius: 50%;
+    border-color: #218e83 #218e83 #0000 #0000;
+    mix-blend-mode: darken;
+    animation: spinnerAnimation 1s infinite linear;
+  }
+  &:after {
+    border-color: #0000 #0000 #dbdcef #dbdcef;
+    animation-direction: reverse;
+  }
 }

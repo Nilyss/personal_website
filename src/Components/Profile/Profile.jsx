@@ -7,8 +7,20 @@ import './_profile.scss'
 // images
 import profilePicture from '../../Assets/Images/pp.webp'
 import Background from '../Background/Background'
+import { useEffect, useState } from 'react'
 
 export default function Profile() {
+  const [isLoaded, setIsLoaded] = useState(false)
+
+  useEffect(() => {
+    let timer = setTimeout(() => {
+      setIsLoaded(true)
+    }, 1500)
+    return () => {
+      clearTimeout(timer)
+    }
+  }, [])
+
   return (
     <section className="sectionProfile">
       <article id="profile" className="sectionProfile__container">
@@ -32,11 +44,15 @@ export default function Profile() {
         </div>
         <div className="sectionProfile__container__pictureContainer">
           <figure className="sectionProfile__container__pictureContainer__fig">
-            <img
-              className="sectionProfile__container__pictureContainer__fig__img"
-              src={profilePicture}
-              alt="Nicolas Decressac"
-            />
+            {isLoaded ? (
+              <img
+                className="sectionProfile__container__pictureContainer__fig__img"
+                src={profilePicture}
+                alt="Nicolas DECRESSAC"
+              />
+            ) : (
+              <div className="spinner"></div>
+            )}
           </figure>
         </div>
         <div className="sectionProfile__container__profile">

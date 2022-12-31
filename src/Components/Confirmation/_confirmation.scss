@@ -4,7 +4,7 @@
 @import '/src/Utils/Styles/keyframes';
 
 .confirmationModalContainer {
-  @media(max-width: $breakpointMobile) {
+  @media (max-width: $breakpointMobile) {
     position: relative;
     top: -10em;
     left: 0;
@@ -17,9 +17,9 @@
   top: 400%;
   left: 20%;
   background-image: radial-gradient(
-                  120% 100% at 110% 0,
-                  $colorTertiary 0,
-                  $colorPrimary 100%
+    120% 100% at 110% 0,
+    $colorTertiary 0,
+    $colorPrimary 100%
   );
   width: 80%;
   height: 100vh;

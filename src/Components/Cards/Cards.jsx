@@ -1,22 +1,25 @@
-import { useEffect, useState } from 'react'
+import { useContext, useState } from 'react'
+import { DataContext } from '../../Context/DataContext'
 
-import HttpService from '../../data/data.service.js'
 // styles
 import './_cards.scss'
-// services
-const http = new HttpService()
+import CardsDetails from '../CardsDetails/CardsDetails'
 export default function Cards() {
-  const [projects, setProjects] = useState([])
+  const { projects } = useContext(DataContext)
+  const [showDetails, setShowDetails] = useState(false)
+  const [selectedProject, setSelectedProject] = useState(null)
+  const goToDetails = (id) => {
+    setSelectedProject(id)
+    setShowDetails(true)
+  }
 
-  // put the data in the state from the HTTP request
-  useEffect(() => {
-    http.getProjects().then((data) => {
-      setProjects(data)
-    })
-  }, [])
-  console.log('projects =>', projects)
   return (
     <ul className="sectionPortFolioDescription__container__cards">
+      <div className="sectionPortFolioDescription__container__cards__details">
+        {showDetails && (
+          <CardsDetails id={selectedProject} setShowDetails={setShowDetails} />
+        )}
+      </div>
       {projects &&
         projects.map((project, index) => (
           <li
@@ -28,9 +31,6 @@ export default function Cards() {
                 {project.name}
               </h3>
             </div>
-            <p className="sectionPortFolioDescription__container__cards__wrapper__overview">
-              {project.overview}
-            </p>
             <div className="sectionPortFolioDescription__container__cards__wrapper__body">
               <figure className="sectionPortFolioDescription__container__cards__wrapper__body__figure">
                 <img
@@ -40,8 +40,14 @@ export default function Cards() {
                 />
               </figure>
             </div>
+            <p className="sectionPortFolioDescription__container__cards__wrapper__overview">
+              {project.overview}
+            </p>
             <div className="sectionPortFolioDescription__container__cards__wrapper__footer">
-              <button className="sectionPortFolioDescription__container__cards__wrapper__footer__details">
+              <button
+                onClick={() => goToDetails(project.id)}
+                className="sectionPortFolioDescription__container__cards__wrapper__footer__details"
+              >
                 Détails du projet
                 <span className="material-symbols-outlined sectionPortFolioDescription__container__cards__wrapper__footer__icons">
                   arrow_forward_ios

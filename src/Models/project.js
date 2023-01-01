@@ -1,11 +1,15 @@
 export class Project {
   constructor(data) {
+    this._id = data._id
     this._name = data.name
     this._stack = data.stack
     this._overview = data.overview
     this._image = data.image
     this._url = data.url
     this._YtUrl = data.YtUrl
+  }
+  get id() {
+    return this._id
   }
   get name() {
     return this._name

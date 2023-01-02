@@ -4,7 +4,7 @@ export class Project {
     this._name = data.name
     this._stack = data.stack
     this._overview = data.overview
-    this._image = data.image
+    this._thumbnail = data.thumbnail
     this._url = data.url
     this._YtUrl = data.YtUrl
   }
@@ -20,8 +20,8 @@ export class Project {
   get overview() {
     return this._overview
   }
-  get image() {
-    return this._image
+  get thumbnail() {
+    return this._thumbnail
   }
   get url() {
     return this._url

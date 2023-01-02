@@ -169,3 +169,30 @@
     animation-direction: reverse;
   }
 }
+
+@mixin cardsButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5em;
+  font-size: 16px;
+  gap: 10px;
+  background-image: radial-gradient(
+                  120% 100% at 110% 0,
+                  $colorTertiary 0,
+                  $colorPrimary 100%
+  );
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: $boxShadowItem;
+  width: 180px;
+  transition: All 300ms ease-out;
+  &:active {
+    background-image: radial-gradient(
+                    60% 100% at 100% 0,
+                    $colorTertiary 0,
+                    $colorPrimary 100%
+    );
+  }
+}

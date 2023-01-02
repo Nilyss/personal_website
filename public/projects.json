@@ -5,35 +5,35 @@
       "name": "Web App — nailissa.fr",
       "stack": "Angular 2+ | NgRx | Node.js",
       "overview": "Création d'un site pour l'entreprise Nailissa, prothésiste ongulaire de La Rochelle. Front-end en Angular 2+, programmation réactive (RxJs), utilisation de NgRx pour gérer les datas. Back-end en Node.js pour la sauvegarde d'utilisateurs, et de prestations.",
-      "image": "https://imgur.com/TJefrNl.png",
-      "url": "",
-      "YtUrl": ""
+      "thumbnail": "https://imgur.com/TJefrNl.png",
+      "url": "https://nailissa.fr",
+      "YtUrl": "https://youtu.be/8-V0F_e2wq4"
     },
     {
       "_id": "5a9b1b9e3d1e854a68a2668d",
       "name": "Mobile App — Vente de Pizza",
       "stack": "React.Native | Redux-toolkit | Expo",
       "overview": "Création d'une application mobile - test technique soumis à un collègue auquel je me suis soumis également, par curiosité.",
-      "image": "https://imgur.com/nDjbqtg.png",
+      "thumbnail": "https://imgur.com/nDjbqtg.png",
       "url": "",
-      "YtUrl": ""
+      "YtUrl": "https://youtube.com/shorts/JoaaS3eG5Pc?feature=share"
     },
     {
       "_id": "5a9b1b9e3d1e854a68a2668e",
       "name": " Web App — Clone de Netflix",
       "stack": "Angular 2+ | Node.js",
       "overview": "Clone du site web Netflix afin d'approfondir Angular 2+ Compte utilisateur sur API REST crée pour l'occasion, Requête API existante pour les données relatives au films, et séries.",
-      "image": "https://imgur.com/J5fOYmL.png",
+      "thumbnail": "https://imgur.com/J5fOYmL.png",
       "url": "",
-      "YtUrl": ""
+      "YtUrl": "https://youtu.be/elWy22m3ypk"
     },
     {
       "_id": "5a9b1b9e3d1e854a68a2668f",
       "name": "Web App — Porte-Folio",
       "stack": "React.js",
       "overview": "Réalisation de mon porte-folio : Le présent site.",
-      "image": "https://imgur.com/U9finDZ.png",
-      "url": "",
+      "thumbnail": "https://imgur.com/U9finDZ.png",
+      "url": "https://ndecressac.fr",
       "YtUrl": ""
     },
     {
@@ -41,16 +41,16 @@
       "name": "Web App - Réseau Social",
       "stack": "React.js | Redux-toolkit | Node.js",
       "overview": "Création d'un réseau social 'From Scratch', front-end comme back-end. Projet OpenClassrooms diplômant.",
-      "image": "https://imgur.com/xQ23CL0.png",
+      "thumbnail": "https://imgur.com/xQ23CL0.png",
       "url": "",
-      "YtUrl": ""
+      "YtUrl": "https://youtu.be/GxKmQJofRvo"
     },
     {
       "_id": "5a9b1b9e3d1e854a68a26691",
       "name": "Web App - API Rest",
       "stack": "Node.js",
       "overview": "Création d'une API Rest en Node.js, utilisé un front-end déjà existant. Projet OpenClassrooms.",
-      "image": "https://imgur.com/wfvRpzQ.png",
+      "thumbnail": "https://imgur.com/wfvRpzQ.png",
       "url": "",
       "YtUrl": ""
     }

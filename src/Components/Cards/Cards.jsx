@@ -25,20 +25,18 @@ export default function Cards() {
           <CardsDetails id={selectedProject} setShowDetails={setShowDetails} />
         )}
       </div>
-      <Carousel
-        className="sectionPortFolioDescription__container__cards__carousel"
-        showThumbs={false}
-        autoPlay={true}
-        interval={6000}
-        infiniteLoop={true}
-        axis={'horizontal'}
-        showArrows={true}
-        showStatus={false}
-        autoFocus={true}
-        emulateTouch={true}
-      >
-        {projects &&
-          projects.map((project, index) => (
+      {projects && (
+        <Carousel
+          className="sectionPortFolioDescription__container__cards__carousel"
+          showThumbs={false}
+          autoPlay={false}
+          interval={6000}
+          infiniteLoop={false}
+          axis={'horizontal'}
+          showArrows={true}
+          showStatus={false}
+        >
+          {projects.map((project, index) => (
             <div
               className="sectionPortFolioDescription__container__cards__wrapper"
               key={index}
@@ -74,7 +72,8 @@ export default function Cards() {
               </div>
             </div>
           ))}
-      </Carousel>
+        </Carousel>
+      )}
     </div>
   )
 }

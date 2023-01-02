@@ -10,13 +10,13 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
-    "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.6.1",
     "react-scripts": "5.0.1",
     "react-scroll": "^1.8.9",
     "sass": "^1.57.1",
     "styled-components": "^5.3.6",
-    "typewriter-effect": "^2.19.0"
+    "typewriter-effect": "^2.19.0",
+    "react-responsive-carousel": "^3.2.21"
   },
   "scripts": {
     "predeploy": "npm run build",

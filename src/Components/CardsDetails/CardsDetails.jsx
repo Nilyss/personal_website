@@ -17,7 +17,6 @@ export default function CardsDetails(props) {
   }
 
   const embedId = selectedProject.YtUrl.split('/').pop()
-  console.log('embedId =>', embedId)
   return (
     <div className="cardDetails">
       <div className="cardDetails__header">
@@ -92,6 +91,7 @@ export default function CardsDetails(props) {
             >
               {selectedProject.images.map((image, index) => (
                 <figure
+                  key={index}
                   className={
                     'sectionPortFolioDescription__container__cards__carousel__imageWrapper'
                   }
@@ -100,7 +100,6 @@ export default function CardsDetails(props) {
                     className={
                       'sectionPortFolioDescription__container__cards__carousel__imageWrapper__image'
                     }
-                    key={index}
                     src={image}
                     alt="Preview of the project"
                   />

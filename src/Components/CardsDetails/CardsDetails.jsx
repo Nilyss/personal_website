@@ -85,7 +85,6 @@ export default function CardsDetails(props) {
               centerMode={true}
               centerSlidePercentage={30}
               infiniteLoop={true}
-              axis={'horizontal'}
               showArrows={true}
               showStatus={false}
               autoFocus={true}

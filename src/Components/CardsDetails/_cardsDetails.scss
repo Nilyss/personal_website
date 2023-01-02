@@ -28,6 +28,9 @@
 }
 
 .cardDetails__header__title {
+  @media (max-width: $breakpointMobile) {
+    font-size: 15px;
+  }
   font-size: 24px;
   filter: $dropShadow;
   text-transform: capitalize;
@@ -81,6 +84,10 @@
 }
 
 .cardDetails__body__message {
+  @media (max-width: $breakpointMobile) {
+    font-size: 14px;
+    margin-top: unset;
+  }
   display: flex;
   flex-flow: column;
   gap: 1em;
@@ -100,10 +107,16 @@
 }
 
 .cardDetails__body__overview {
+  @media (max-width: $breakpointMobile) {
+    width: 100%;
+  }
   width: 33%;
 }
 
 .cardDetails__body__overview--bold {
+  @media (max-width: $breakpointMobile) {
+    font-size: 14px;
+  }
   font-weight: 700;
   font-size: 17px;
 }
@@ -118,12 +131,18 @@
 }
 
 .sectionPortFolioDescription__container__cards__carousel__imageWrapper {
-  max-height: 200px;
+  @media (max-width: $breakpointMobile) {
+    max-height: 100px;
+  }
+  max-height: 300px;
   width: 98%;
 }
 
 .sectionPortFolioDescription__container__cards__carousel__imageWrapper__image {
-  max-height: 200px;
+  @media (max-width: $breakpointMobile) {
+    max-height: 100px;
+  }
+  max-height: 300px;
   object-fit: contain;
 }
 

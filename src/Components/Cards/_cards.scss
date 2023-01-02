@@ -11,6 +11,9 @@
 }
 
 .sectionPortFolioDescription__container__cards__details {
+  @media (max-width: $breakpointMobile) {
+    width: 100%;
+  }
   position: absolute;
   width: 80%;
 }

@@ -1,5 +1,17 @@
-@keyframes videoFadeIn{
-  0% {opacity: 0}
-  50% {opacity: 1}
-  100% {opacity: 0 }
+@keyframes videoFadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes spinnerAnimation {
+  100% {
+    transform: rotate(1turn);
+  }
 }

@@ -14,7 +14,7 @@
 }
 
 .footer__nav__ul {
-  @media(max-width: $breakpointMobile) {
+  @media (max-width: $breakpointMobile) {
     flex-flow: column;
     gap: 1em;
   }

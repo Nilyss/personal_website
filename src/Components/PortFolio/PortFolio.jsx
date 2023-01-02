@@ -1,5 +1,5 @@
 // components
-import Carousel from '../Carousel/Carousel'
+import Cards from '../Cards/Cards'
 
 // styles
 import './_portFolio.scss'
@@ -10,14 +10,10 @@ export default function PortFolio() {
       <article className="sectionPortFolioDescription__container">
         <div className="sectionPortFolioDescription__container__intro">
           <h2 className="sectionPortFolioDescription__container__intro__title">
-            <span className="material-symbols-outlined ecoIcon">eco</span>
-            Porte-Folio
-          </h2>
-          <h3 className="sectionPortFolioDescription__container__intro__subtitle">
             Projets réalisés
-          </h3>
+          </h2>
         </div>
-        <Carousel />
+        <Cards />
       </article>
     </section>
   )

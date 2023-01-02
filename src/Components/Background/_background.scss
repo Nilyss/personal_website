@@ -1,7 +1,7 @@
 @import '/src/Utils/Styles/variables';
 
 .background__fig {
-  @media(max-width: $breakpointTablet) {
+  @media (max-width: $breakpointTablet) {
     display: none;
   }
   width: 102.3%;

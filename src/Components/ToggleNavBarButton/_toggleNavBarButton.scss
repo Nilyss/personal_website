@@ -6,7 +6,7 @@
 // ********** Icons Style **********
 
 .iconsContainer {
-  @media(max-width: $breakpointMobile) {
+  @media (max-width: $breakpointMobile) {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -33,9 +33,9 @@
   border-radius: 50%;
   padding: 0.2em;
   background-image: radial-gradient(
-                  120% 100% at 110% 0,
-                  $colorTertiary 0,
-                  $colorPrimary 100%
+    120% 100% at 110% 0,
+    $colorTertiary 0,
+    $colorPrimary 100%
   );
   box-shadow: $boxShadowItem;
 }

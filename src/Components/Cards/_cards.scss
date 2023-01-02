@@ -1,0 +1,119 @@
+@import '/src/Utils/Styles/variables';
+@import '/src/Utils/Styles/mixins';
+@import '/src/Utils/Styles/keyframes';
+
+.sectionPortFolioDescription__container {
+  width: 100%;
+}
+
+.sectionPortFolioDescription__container__cards {
+  width: 100%;
+}
+
+.sectionPortFolioDescription__container__cards__details {
+  @media (max-width: $breakpointMobile) {
+    width: 100%;
+  }
+  position: absolute;
+  width: 80%;
+}
+
+.sectionPortFolioDescription__container__cards__carousel {
+}
+
+.sectionPortFolioDescription__container__cards__wrapper {
+  min-height: 800px;
+  width: 100%;
+  border: 2px solid palegoldenrod;
+  border-radius: 8px;
+  list-style: none;
+  background: #2b2a33;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+  transition: All 300ms ease-out;
+  cursor: pointer;
+}
+
+.sectionPortFolioDescription__container__cards__wrapper__header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sectionPortFolioDescription__container__cards__wrapper__header__title {
+  color: #f2f2f2;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: $dropShadow;
+  position: relative;
+  &:after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    border-radius: 8px;
+    background: radial-gradient(
+      circle,
+      rgba(229, 222, 152, 1) 0%,
+      rgba(230, 202, 112, 1) 82%,
+      rgba(212, 164, 71, 1) 100%
+    );
+    top: 50px;
+  }
+}
+
+.sectionPortFolioDescription__container__cards__wrapper__body {
+}
+
+.sectionPortFolioDescription__container__cards__wrapper__overview {
+  font-size: 18px;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 1em;
+}
+
+.sectionPortFolioDescription__container__cards__wrapper__body__figure {
+  width: 100%;
+  max-height: 500px;
+  border-radius: 8px;
+}
+
+.sectionPortFolioDescription__container__cards__wrapper__body__figure__picture {
+  object-fit: contain;
+  width: 100%;
+  height: 500px;
+  border-radius: 4px;
+}
+
+.sectionPortFolioDescription__container__cards__wrapper__footer {
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.sectionPortFolioDescription__container__cards__wrapper__footer__button {
+  @include cardsButton;
+  &:hover {
+    outline: 0;
+    background-image: radial-gradient(
+      60% 100% at 100% 0,
+      $colorTertiary 0,
+      $colorPrimary 60%
+    );
+    width: 250px;
+    transform: scale(1.2);
+    transition: All 300ms ease-out;
+  }
+}
+
+.sectionPortFolioDescription__container__cards__wrapper__footer__icons {
+}

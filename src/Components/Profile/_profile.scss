@@ -33,7 +33,7 @@
 }
 
 .sectionProfile__container__intro {
-  @media(max-width: $breakpointTablet) {
+  @media (max-width: $breakpointTablet) {
     margin-bottom: 5em;
   }
   display: flex;
@@ -50,12 +50,12 @@
   font-size: 2.5em;
   font-weight: 700;
   display: flex;
-  gap: .5em;
+  gap: 0.5em;
   position: relative;
   margin: auto;
   justify-content: center;
   &::after {
-    @media(max-width: $breakpointMobile) {
+    @media (max-width: $breakpointMobile) {
       top: 2.5em;
     }
     content: '';
@@ -63,9 +63,15 @@
     width: 75%;
     height: 3px;
     border-radius: 8px;
-    background: radial-gradient(circle, rgba(229,222,152,1) 0%, rgba(230,202,112,1) 82%, rgba(212,164,71,1) 100%);
+    background: radial-gradient(
+      circle,
+      rgba(229, 222, 152, 1) 0%,
+      rgba(230, 202, 112, 1) 82%,
+      rgba(212, 164, 71, 1) 100%
+    );
     top: 1.5em;
-  }}
+  }
+}
 
 .sectionProfile__container__pictureContainer__fig {
   width: 100%;
@@ -93,4 +99,8 @@
 
 .sectionProfile__container__profile__text {
   @include paragraphStyle;
+}
+
+.spinner {
+    @include spinner;
 }

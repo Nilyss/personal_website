@@ -30,48 +30,86 @@ export default function CardsDetails(props) {
           close
         </div>
       </div>
-      {selectedProject.url && (
-        <div className="cardDetails__externalLinkWrapper">
-          <p>
-            Consulté le déploiement du projet :{' '}
-            <a
-              href={selectedProject.url}
-              className="cardDetails__externalLinkWrapper__link"
-              title={selectedProject.url.split('/').pop()}
-            >
-              {selectedProject.url.split('/').pop()}
-            </a>
-          </p>
-        </div>
-      )}
       <div className="cardDetails__body">
-        <Carousel
-          className="sectionPortFolioDescription__container__cards__carousel"
-          showThumbs={false}
-          autoPlay={true}
-          interval={6000}
-          centerMode={true}
-          centerSlidePercentage={50}
-          infiniteLoop={true}
-          axis={'horizontal'}
-          showArrows={true}
-          showStatus={false}
-          autoFocus={true}
-          emulateTouch={true}
-        ></Carousel>
+        <div className="cardDetails__body__message">
+          {selectedProject.url && (
+            <div className="cardDetails__externalLinkWrapper">
+              <p className={'cardDetails__body__overview--bold'}>
+                Consulté le déploiement du projet :{' '}
+                <a
+                  href={selectedProject.url}
+                  className="cardDetails__externalLinkWrapper__link"
+                  title={selectedProject.url.split('/').pop()}
+                >
+                  {selectedProject.url.split('/').pop()}
+                </a>
+              </p>
+            </div>
+          )}
+          <div className="cardDetails__body__stack">
+            <p>
+              <span className={'cardDetails__body__overview--bold'}>
+                Stack technique :
+              </span>{' '}
+              {selectedProject.stack}{' '}
+            </p>
+          </div>
+          <div className="cardDetails__body__overview">
+            <p>
+              <span className={'cardDetails__body__overview--bold'}>
+                Description :
+              </span>{' '}
+              {selectedProject.overview}{' '}
+            </p>
+          </div>
+        </div>
         <div className="cardDetails__body__youtube">
           {selectedProject.YtUrl && (
             <iframe
               width="853"
               height="480"
               src={`https://www.youtube.com/embed/${embedId}`}
-              frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
               title="Embedded youtube"
             />
           )}
         </div>
+        {selectedProject.images && (
+          <div className={'carouselWrapper'}>
+            <Carousel
+              className="sectionPortFolioDescription__container__cards__carousel"
+              showThumbs={false}
+              autoPlay={true}
+              interval={3000}
+              centerMode={true}
+              centerSlidePercentage={30}
+              infiniteLoop={true}
+              axis={'horizontal'}
+              showArrows={true}
+              showStatus={false}
+              autoFocus={true}
+              emulateTouch={true}
+            >
+              {selectedProject.images.map((image, index) => (
+                <figure
+                  className={
+                    'sectionPortFolioDescription__container__cards__carousel__imageWrapper'
+                  }
+                >
+                  <img
+                    className={
+                      'sectionPortFolioDescription__container__cards__carousel__imageWrapper__image'
+                    }
+                    key={index}
+                    src={image}
+                    alt="Preview of the project"
+                  />
+                </figure>
+              ))}
+            </Carousel>
+          </div>
+        )}
       </div>
       <div className="cardDetails__footer">
         <button

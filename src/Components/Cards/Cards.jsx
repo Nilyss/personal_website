@@ -30,8 +30,6 @@ export default function Cards() {
         showThumbs={false}
         autoPlay={true}
         interval={6000}
-        centerMode={true}
-        centerSlidePercentage={50}
         infiniteLoop={true}
         axis={'horizontal'}
         showArrows={true}

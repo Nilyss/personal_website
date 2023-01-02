@@ -5,6 +5,7 @@ export class Project {
     this._stack = data.stack
     this._overview = data.overview
     this._thumbnail = data.thumbnail
+    this._images = data.images
     this._url = data.url
     this._YtUrl = data.YtUrl
   }
@@ -22,6 +23,9 @@ export class Project {
   }
   get thumbnail() {
     return this._thumbnail
+  }
+  get images() {
+    return this._images
   }
   get url() {
     return this._url

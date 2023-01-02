@@ -57,11 +57,12 @@ export default function Profile() {
         </div>
         <div className="sectionProfile__container__profile">
           <p className="sectionProfile__container__profile__text">
-            Passionné par le développement web, avec une appétence pour la
-            partie front-end, tout en appréciant également la partie back-end,
-            je recherche une alternance étant déjà diplômé chez OpenClassrooms
-            de la formation développeur web (RNCP 36076), afin de parfaire mes
-            connaissances du métier.
+            Je suis passionné par le développement web, avec une appétence
+            particulière pour la partie front-end tout en appréciant également
+            la partie back-end. Diplômé de la formation de développeur web de
+            OpenClassrooms (Bac +2, RNCP 36076), je suis à la recherche de
+            nouvelles opportunités pour parfaire mes connaissances dans le
+            métier.
           </p>
         </div>
       </article>

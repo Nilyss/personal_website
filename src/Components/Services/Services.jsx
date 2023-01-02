@@ -29,8 +29,9 @@ export default function Services() {
             <div className="sectionServices__container__card__body">
               <p className="sectionServices__container__card__body__text">
                 Création de site web statique et dynamique grace à HTML5, CSS3,
-                et JavaScript ECMAScript 6, ainsi que de Framework front-end
-                comme React.js.
+                JavaScript ECMAScript 6, TypeScript 4.8 ainsi que de Framework
+                front-end comme Angular 14 ou React.js 18 et React-native côté
+                développement mobile.
               </p>
             </div>
           </div>

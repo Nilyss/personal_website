@@ -40,7 +40,6 @@ export default function Cards() {
             <div
               className="sectionPortFolioDescription__container__cards__wrapper"
               key={index}
-              onClick={() => goToDetails(project.id)}
             >
               <div className="sectionPortFolioDescription__container__cards__wrapper__header">
                 <h3 className="sectionPortFolioDescription__container__cards__wrapper__header__title">
